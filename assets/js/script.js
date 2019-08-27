@@ -54,8 +54,6 @@ var clickHandler2 = function(id) {
   return function() {
     $(this).addClass('active');
     $('.pl__all').hide();
-
-    $('.' + id).delay(50).fadeIn(350);
   }
 };
 
