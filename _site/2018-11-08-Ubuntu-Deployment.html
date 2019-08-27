@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=/pages/ie.xml"><![endif]-->
+
+<title>Ubuntu Server部署日记</title>
+<meta name="baidu-site-verification" content="rV13eEAUHL" />
+<meta name="title" content="Ubuntu Server部署日记">
+
+  <meta name="author" content="Hong-hai zhang">
+
+<meta name="keywords" content="">
+
+  <meta name="description" content="Ubuntu Server部署日记">
+
+
+<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="https://cdn.staticfile.org/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  // 防止页面 url 更改
+  var url = decodeURI(window.location);
+  url = url.split('?')[0];
+  window.history.pushState({}, 0, url);
+
+  var _hmt = _hmt || [];
+  (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a5e3a9f3394bf75c254e794603f83613";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.custom.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/iDisqus.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mobile.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/highlight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Source+Code+Pro">
+
+<link href="/pages/rss.xml" rel="alternate" title="阿川的个人博客" type="application/atom+xml">
+
+  </head>
+  <body>
+    <button id="js-fullscreen">
+      <span id="icon-arrow" class="fontello"></span>
+    </button>
+    <button id="scroll-top">
+      <span id="icon-arrow-up" class="fontello"></span>
+    </button>
+    <aside id="sidebar">
+  <nav id="tags">
+    <!--头像-->
+    <a href="/" id="avatar">
+      <img src="/assets/images/avatar.jpg" alt="">
+    </a>
+
+    <!--栏目分类-->
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags-btn active">全部</li>
+      
+        <li id="技术" class="tags__li tags-btn">技术</li>
+      
+        <li id="生活" class="tags__li tags-btn">生活</li>
+      
+        <li id="摄影" class="tags__li tags-btn">摄影</li>
+      
+        <li id="开发" class="tags__li tags-btn">开发</li>
+      
+      <a href="/pages/archive.html">
+        <li class="tags__li tags-btn blogroll">归档</li>
+      </a>
+      <a href="/pages/blogroll.html">
+        <li class="tags__li tags-btn blogroll">链接</li>
+      </a>
+      <a href="/pages/message.html">
+        <li class="tags__li tags-btn blogroll">留言</li>
+      </a>
+    </ul>
+
+    <!--Github - Rss - 邮箱-->
+    <div id="tags__bottom">
+      <a href="https://github.com/achuanya" id="icon-github" class="tags-btn fontello" target="_blank"></a>
+      <a href="/pages/rss.xml" id="icon-feed" class="tags-btn fontello" target="_blank"></a>
+      <a href="mailto:achuan@achuan.io" id="icon-email" class="tags-btn fontello"></a>
+    </div>
+  </nav>
+
+  <!--搜索-->
+  <div id="posts-list">
+    <form action="" id="search-form">
+      <a href="/" id="mobile-avatar" style="background-image:url(/assets/images/avatar.jpg)"></a>
+      <input id="search-input" type="text" placeholder="站内搜索..." >
+    </form>
+
+    <!--文章列表-->
+    <nav id="pl__container">
+    
+      <a class="生活 pl__all" href="/2019-08-25-tech-What-happened">
+        <span class="pl__circle"></span>
+        <span class="pl__title">说说消失这二十多天发生的事情</span>
+        <span class="pl__date">2019-08-25</span>
+      </a>
+    
+      <a class="开发 pl__all" href="/2019-08-07-flex-slider-and-raxus-slider">
+        <span class="pl__circle"></span>
+        <span class="pl__title">FlexSlider 和 RaxusSlider 插件相关参数</span>
+        <span class="pl__date">2019-08-07</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-05-19-tech-whiz">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)我眼中的技术高手</span>
+        <span class="pl__date">2019-05-19</span>
+      </a>
+    
+      <a class="摄影 pl__all" href="/2019-04-20-One-Single-Lens">
+        <span class="pl__circle"></span>
+        <span class="pl__title">我的第一部单反相机</span>
+        <span class="pl__date">2019-04-20</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-03-26-thoughts">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2019-03-26 随笔</span>
+        <span class="pl__date">2019-03-26</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-25-unicom">
+        <span class="pl__circle"></span>
+        <span class="pl__title">电信用户投诉攻略</span>
+        <span class="pl__date">2019-02-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-23-insist">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)微不足道的坚持</span>
+        <span class="pl__date">2019-02-23</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-12-31-2018">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2018小总结</span>
+        <span class="pl__date">2018-12-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-20-cmd">
+        <span class="pl__circle"></span>
+        <span class="pl__title">cmd笔记(长期更新)</span>
+        <span class="pl__date">2018-12-20</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-14-php-notes">
+        <span class="pl__circle"></span>
+        <span class="pl__title">php笔记(长期更新)</span>
+        <span class="pl__date">2018-12-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-11-08-Ubuntu-Deployment">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu Server部署日记</span>
+        <span class="pl__date">2018-11-08</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-25-ubuntu-lock">
+        <span class="pl__circle"></span>
+        <span class="pl__title">解决ubuntu：E：无法获得锁(11：资源暂时不可用)</span>
+        <span class="pl__date">2018-10-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-24-theory-of-means">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)论胡编乱造的写作技巧</span>
+        <span class="pl__date">2018-10-24</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-21-domain-name">
+        <span class="pl__circle"></span>
+        <span class="pl__title">更换了域名、邮箱并修复了移动端bug</span>
+        <span class="pl__date">2018-10-21</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-14-git">
+        <span class="pl__circle"></span>
+        <span class="pl__title">开源分布式管理控制系统——Git笔记</span>
+        <span class="pl__date">2018-10-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-24-linux-command">
+        <span class="pl__circle"></span>
+        <span class="pl__title">linux命令笔记(长期更新)</span>
+        <span class="pl__date">2018-09-24</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-23-Object_oriented">
+        <span class="pl__circle"></span>
+        <span class="pl__title">面向对象(Object Oriented)学习笔记(一)</span>
+        <span class="pl__date">2018-09-23</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-03-Markdown">
+        <span class="pl__circle"></span>
+        <span class="pl__title">致简写作神器——Markdown</span>
+        <span class="pl__date">2018-09-03</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-08-31-Programmer-development">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)为什么你写不好一个快速排序? 谈程序员的职业发展</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-31-Learning-the-open-source">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)如何学习开源项目</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-30-Ubuntu-set-up-sublime">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu调教日记之Sublime Text3</span>
+        <span class="pl__date">2018-08-30</span>
+      </a>
+    
+    </nav>
+  </div>
+</aside>
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+    <h1 id="post__title" data-identifier="20181108">Ubuntu Server部署日记</h1>
+    <div id="post__date">2018-11-08</div>
+    <declare id="declare" class="declare">
+      <hr/> 本博客所有文章采用的授权方式为
+        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh?achuan.io">
+          自由转载-非商用-非衍生-保持署名
+        </a>
+      ，转载请务必注明出处，谢谢。
+      声明：<br />本博客欢迎转发，但请保留原作者信息!<br />
+      博客：<a href="">阿川的个人博客</a><br />
+      邮箱：<a href="mailto:achuan@achuan.io">achuan@achuan.io</a>
+      <br />内容系本人学习、研究和总结，如有雷同，实属荣幸！
+      <hr/>
+    </declare>
+    <p> 出于挂一些签到软件的原因我一直在用Windows Server2012，因为服务器配置较低图形界面操作卡的要死，干脆直接上纯命令操作系统的linux。
+关于linux发行版我几乎都玩过。在选择linux服务器这块也没有太犹豫，我个人比较痴情Ubuntu，我个人用户对于服务器要求没有那么高，所以选择了 Ubuntu Server 16.04.1 LTS。不过我第一次部署纯命令操作系统，部署的过程中还是遇到一些小麻烦，不过办法总比困难多嘛！</p>
+
+<h2 id="root登录">root登录</h2>
+<p>首先，使用<a href="http://linux.51yip.com/search/ssh?achuan.io">ssh命令</a>在终端登录到远程主机</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>achuan@achuan-pc:~<span class="nv">$ </span><span class="nb">sudo </span>ssh ubuntu@139.199.105.72
+<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> achuan 的密码： 
+ubuntu@139.199.105.72<span class="s1">'s password:
+The authenticity of host '</span>139.199.105.72 <span class="o">(</span>139.199.105.72<span class="o">)</span><span class="s1">' can'</span>t be established.
+ECDSA Key fingerprint is SHA256:HNndgD6z/I2L8DzCA5nk9w9CEzHpW9WouGAmkMDR7LK.
+Are you sure you want to <span class="k">continue </span>connecting <span class="o">(</span><span class="nb">yes</span>/no<span class="o">)</span>? <span class="nb">yes
+</span>ubuntu@139.199.105.72<span class="s1">'s password:
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-130-generic x86_64)
+
+* Documentation:    https://help.ubuntu.com
+* Management:       https://landscape.canonical.com
+* Support:          https://ubuntu.com/advantage
+New release '</span>18.04.1 LTS<span class="s1">' available.
+Run '</span><span class="k">do</span><span class="nt">-release-upgrade</span><span class="s1">' to upgrade to it.
+
+Last login: Mon Nov 5 16:38:39 2018 From 119.28.7.195
+ubuntu@VM-22-96-ubuntu:~$
+</span></code></pre></div></div>
+
+<p>这时，登录时命令行出现了警告，它说这是一个新的地址，存在安全风险。简单了解一下之后，我选择面对风险　yes 顺利登入远程主机。<br />
+对我来说登入后第一件事莫过于设置root密码</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>passwd root
+</code></pre></div></div>
+
+<h2 id="安装-vim">安装 vim</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装vim</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>vim-gtk
+......
+Do you want to <span class="k">continue</span> <span class="o">[</span>Y/n]? Y
+</code></pre></div></div>
+
+<p>命令行敲入　vi ,Tab一下，不出问题已经有　viｍ</p>
+
+<h3 id="配置vim">配置vim</h3>
+<p>强迫症的我，简单的配置一下…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/vim/vimrc
+</code></pre></div></div>
+
+<p>文件内容里有这么一句：<code class="highlighter-rouge">syntax on</code>它的意思是“语法高亮”，别注释它！为了提升体验我们需要set一下</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set </span>nu          <span class="c"># 在左侧显示行号</span>
+<span class="nb">set </span><span class="nv">tabstop</span><span class="o">=</span>4   <span class="c"># tab长度设置为4</span>
+<span class="nb">set </span>cursorline  <span class="c"># 覆盖文件时不备份</span>
+<span class="nb">set </span>ruler       <span class="c"># 在右下角显示状态栏</span>
+<span class="nb">set </span>autoindent  <span class="c"># 自动锁紧</span>
+<span class="nb">set </span>showmatch   <span class="c"># 高亮显示匹配的括号</span>
+<span class="c"># 编码设置</span>
+<span class="nb">set </span><span class="nv">fencs</span><span class="o">=</span><span class="nv">utf</span><span class="o">=</span>uft-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+<span class="c"># 语言设置</span>
+<span class="nb">set </span><span class="nv">langmenu</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nb">set </span><span class="nv">helplang</span><span class="o">=</span>cn
+</code></pre></div></div>
+
+<h2 id="安装apache">安装apache</h2>
+<p>我们使用源安装<a href="https://zh.wikipedia.org/wiki/Apache_HTTP_Server?achuan.io">apache</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>apache2
+</code></pre></div></div>
+
+<h3 id="配置apache">配置apache</h3>
+<p>启动apache的两种姿势</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /etc/init.d/apache2 start
+<span class="c"># 或</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service apache2 star
+<span class="c"># [start] [restart] [stop] [status]</span>
+</code></pre></div></div>
+
+<h3 id="推送文件到网站根目录">推送文件到网站根目录</h3>
+<p>在这里我遇到一个问题</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@achuan-pc:/home/achuan/视频/ubuntu# scp <span class="nt">-r</span> htdocs ubuntu@139.199.105.72:/var/www
+ubuntu@139.199.105.72<span class="s1">'s password: 
+scp: /var/www/htdocs: Permission denied
+</span></code></pre></div></div>
+
+<p>用 scp 推送文件夹的时候出现了<code class="highlighter-rouge">Permission denied</code><br />
+what the?　我被拒绝了？</p>
+
+<p>想了想原来是网站的根目录<code class="highlighter-rouge">/var/www</code>没有写入权限，让我们chmod一下？</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh ubuntu@139.199.105.72
+......
+<span class="nv">$ </span><span class="nb">sudo chmod </span>777 <span class="nt">-R</span> /var/www
+</code></pre></div></div>
+
+<p>已经解决了让我们再 scp 一下！</p>
+
+<h3 id="解决ssh自动断连">解决ssh自动断连</h3>
+<p>这个自动断连就让我很是难受，不管是利用终端还是客户端工具都会出现这个问题，经过了解原来是正常的…<br />
+使用ssh连接远程服务器隔段时间没有任何操作，客户端与服务器就会自动断连，解决办法如下：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/ssh/sshd_config
+<span class="nv">$ </span><span class="nb">sudo </span>service sshd reload
+</code></pre></div></div>
+
+<p>我们需要修改客户端或服务器端　<code class="highlighter-rouge">/etc/ssh/sshd_config</code>　配置文件，找到<code class="highlighter-rouge">ClientAliveInterval</code>，改成 60（分钟单位，默认0）意思的每一分钟向客户端发送一个消息，用于保持连接，</p>
+
+<h3 id="virtualhost配置">VirtualHost配置</h3>
+<p>关于ubuntu serverd的apache配置文件在<code class="highlighter-rouge">/etc/apache2/apache.conf</code>当apache启动时会自动读取这个文件的配置信息，而其他的一些配置文件，则是通过Include指令引入。奇怪的是我找不到httpd.conf，算了自己动手丰衣足食</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入apache文件夹 &gt; 创建 httpd.conf</span>
+<span class="nv">$ </span><span class="nb">cd</span> /etc/apache2/ <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>vi httpd.conf
+<span class="c"># 并写入以下配置内容</span>
+
+<span class="c"># 如果你的服务器有多个IP、不同的虚拟用户时，你可以更改它</span>
+&lt;VirtualHost <span class="o">[</span>IP]:[端口]&gt;
+...
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost <span class="k">*</span>:80&gt;
+	ServerAdmin achuan@achuan.io         <span class="c"># 网站管理员邮箱，可填可不填</span>
+	DocumentRoot <span class="s2">"/var/www/chenbtpig"</span>    <span class="c"># 网站根目录</span>
+	ServerName chenchen1112.cn           <span class="c"># 域名</span>
+	&lt;Directory <span class="s2">"/var/www/chenbtpig"</span><span class="o">&gt;</span>	 <span class="c"># 网站根目录权限设置</span>
+		Options Indexes FollowSymLinks   <span class="c"># 禁止显示Apache目录</span>
+		AllowOverride All				 <span class="c"># 允许重写apache默认配置</span>
+		Order allow,deny				 <span class="c"># 允许所有</span>
+		Allow from all
+	&lt;/Directory&gt;
+	Errorlog <span class="s2">"logs/chenchen1112.cn-error.log"</span>   <span class="c"># 网站错误日志</span>
+	CustomLog <span class="s2">"logs/chenchen1112.cn-access.log"</span> common   <span class="c"># 网站访问日志</span>
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost <span class="k">*</span>:80&gt;
+	ServerAdmin achuan@achuan.io
+	DocumentRoot <span class="s2">"/var/www/code_rain"</span>
+	ServerName lmissyou.club
+	&lt;Directory <span class="s2">"/var/www/code_rain"</span><span class="o">&gt;</span>
+		Options Indexes FollowSymLinks
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	&lt;/Directory&gt;
+	Errorlog <span class="s2">"logs/lmissyou.club-errpr.log"</span>
+	CustomLog <span class="s2">"logs/lmissyou.club-access.log"</span> common
+&lt;/VirtualHost&gt;
+
+<span class="c"># 打开apache配置文件并写入“Include httpd.conf”</span>
+<span class="nv">$sudo</span> vim /etc/apache2/apache2.conf
+
+<span class="c"># 修改hosts /etc/hosts</span>
+<span class="nv">$ </span><span class="nb">sudo </span>vi /etc/hosts
+<span class="c"># 写入　IP与域名</span>
+<span class="c"># 139.199.105.72 www.chenchen.1112.cn</span>
+</code></pre></div></div>
+
+<h4 id="网站首页的优先级">网站首页的优先级</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#用于VirtualHost括号内，优先级从左往右依次降低</span>
+DirectoryIndex index.php index.html
+</code></pre></div></div>
+
+<h4 id="错误日志">错误日志</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 用于VirtualHost括号内，在apache配置目录应有logs文件夹，没有自己创建</span>
+Errorlog <span class="s2">"logs/chenchen1112.cn-error.log"</span>
+</code></pre></div></div>
+
+<h4 id="访问日志">访问日志</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CustomLog <span class="s2">"logs/chenchen1112.cn-access.log"</span> common
+</code></pre></div></div>
+
+<h4 id="错误页面的显示">错误页面的显示</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ErrorDocument 404/missing.html
+</code></pre></div></div>
+
+<h2 id="安装php56">安装php5.6</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 添加PPA源</span>
+<span class="nv">$ </span><span class="nb">sudo </span>add-apt-repository ppa:ondrej/php
+<span class="c"># 若报错或没有发现命令则执行　$ sudo apt-get install python-software-properties</span>
+<span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装php5.6</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>php5.6
+<span class="c"># 验证版本</span>
+<span class="nv">$ </span><span class="nb">sudo </span>php <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>apache2.conf文件，这个文件通过包含其他配置文件涵盖了所
+让我们写个试试？</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入www并创建新文件index.php</span>
+<span class="nv">$ </span><span class="nb">cd</span> /var/www <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>vi index.php
+<span class="c"># 写入到index.php	</span>
+&lt;?php
+phpinfo<span class="o">()</span><span class="p">;</span>
+?&gt;
+</code></pre></div></div>
+
+<h3 id="配置php">配置php</h3>
+<p>ubuntu serverd的php配置文件在<code class="highlighter-rouge">/etc/php/5.6/apache2/php.ini</code><br />
+近期发现php的时区是GMT（格林威治平时），而不是GMT+8（东八区）它们的显示时间会相差8个小时，这怎么行！</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 打开php.ini配置文件</span>
+<span class="nv">$ </span><span class="nb">sudo </span>vi /etc/php/5.6/apache2/php.ini
+<span class="c"># 找到 date.timezone 并赋值 PRC（中华人民共和国英文缩写） date.timezone = PRC</span>
+</code></pre></div></div>
+
+<p>输入我的公网ip查看一下<br />
+<img src="/assets/article/2018-11-08-Ubuntu-Deployment/phpinfo.png?achuan.io" alt="Alt text" title="php5.6安装成功！Cheers!" /></p>
+
+<h2 id="安装mysql">安装mysql</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装mysql服务器与客户端，安装时会有两次交互，关于mysql密码的设置</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>mysql-server mysql-client
+
+<span class="c"># 查看安装是否成功</span>
+<span class="nv">$ </span><span class="nb">sudo </span>netstat <span class="nt">-tap</span> | <span class="nb">grep </span>mysql
+
+root@VM-22-96-ubuntu:/etc/mysql/mysql.conf.d# <span class="nb">sudo </span>netstat <span class="nt">-tap</span> | <span class="nb">grep </span>mysql
+tcp6       0      0 <span class="o">[</span>::]:mysql              <span class="o">[</span>::]:<span class="k">*</span>                  LISTEN      7818/mysqld   
+</code></pre></div></div>
+
+<h3 id="配置mysql">配置mysql</h3>
+<p>启动mysql的两种姿势</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /etc/init.d/mysql start
+<span class="c"># 或</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service mysql star
+<span class="c"># [start] [restart] [stop] [status]</span>
+</code></pre></div></div>
+
+<h4 id="远程连接mysql">远程连接mysql</h4>
+<p>ubuntu serverd的mysql配置文件在<code class="highlighter-rouge">/etc/mysql/mysql.conf.d/mysqld.cnf</code></p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span> <span class="err">修改配置文件的端口绑定</span>	
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">mysql</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">mysqld</span><span class="p">.</span><span class="n">cnf</span>
+<span class="o">#</span> <span class="err">注释掉</span> <span class="n">bind</span><span class="o">-</span><span class="n">adress</span> <span class="o">=</span> <span class="mi">127</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span>
+<span class="o">#</span> <span class="err">进入数据库</span>
+<span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+<span class="o">#</span> <span class="err">选择使用的数据库</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">mysql</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">修改</span><span class="k">host</span><span class="err">值（以通配符</span> <span class="o">%</span> <span class="err">增加主机</span><span class="o">/</span><span class="n">IP</span><span class="err">地址）当然你可以可以直接增加</span><span class="n">IP</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">update</span> <span class="k">user</span> <span class="k">set</span> <span class="k">host</span> <span class="o">=</span> <span class="s1">'%'</span> <span class="k">where</span> <span class="k">user</span> <span class="o">=</span> <span class="s1">'root'</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">让权限立即生效</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">flush</span> <span class="k">privileges</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">查看修改是否成功　</span><span class="o">**%</span>         <span class="o">|</span> <span class="n">root</span><span class="o">**</span><span class="err">说明远程连接已经开启</span> 
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="k">host</span><span class="p">,</span> <span class="k">user</span> <span class="k">from</span> <span class="k">user</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+<span class="o">|</span> <span class="k">host</span>      <span class="o">|</span> <span class="k">user</span>             <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+<span class="o">|</span> <span class="o">%</span>         <span class="o">|</span> <span class="n">root</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">debian</span><span class="o">-</span><span class="n">sys</span><span class="o">-</span><span class="n">maint</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">mysql</span><span class="p">.</span><span class="k">session</span>    <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">mysql</span><span class="p">.</span><span class="n">sys</span>        <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">root</span>             <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+
+
+<span class="o">#</span> <span class="err">如下连接成功！</span>
+
+<span class="n">achuan</span><span class="o">@</span><span class="n">achuan</span><span class="o">-</span><span class="n">pc</span><span class="p">:</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apache2</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">h</span> <span class="mi">139</span><span class="p">.</span><span class="mi">199</span><span class="p">.</span><span class="mi">105</span><span class="p">.</span><span class="mi">72</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+<span class="n">Enter</span> <span class="n">password</span><span class="p">:</span> 
+<span class="n">Welcome</span> <span class="k">to</span> <span class="n">the</span> <span class="n">MySQL</span> <span class="n">monitor</span><span class="p">.</span>  <span class="n">Commands</span> <span class="k">end</span> <span class="k">with</span> <span class="p">;</span> <span class="k">or</span> <span class="err">\</span><span class="k">g</span><span class="p">.</span>
+<span class="n">Your</span> <span class="n">MySQL</span> <span class="k">connection</span> <span class="n">id</span> <span class="k">is</span> <span class="mi">6</span>
+<span class="n">Server</span> <span class="k">version</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">7</span><span class="p">.</span><span class="mi">24</span><span class="o">-</span><span class="mi">0</span><span class="n">ubuntu0</span><span class="p">.</span><span class="mi">16</span><span class="p">.</span><span class="mi">04</span><span class="p">.</span><span class="mi">1</span> <span class="p">(</span><span class="n">Ubuntu</span><span class="p">)</span>
+
+<span class="n">Copyright</span> <span class="p">(</span><span class="k">c</span><span class="p">)</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="n">Oracle</span> <span class="k">and</span><span class="o">/</span><span class="k">or</span> <span class="n">its</span> <span class="n">affiliates</span><span class="p">.</span> <span class="k">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="p">.</span>
+
+<span class="n">Oracle</span> <span class="k">is</span> <span class="n">a</span> <span class="n">registered</span> <span class="n">trademark</span> <span class="k">of</span> <span class="n">Oracle</span> <span class="n">Corporation</span> <span class="k">and</span><span class="o">/</span><span class="k">or</span> <span class="n">its</span>
+<span class="n">affiliates</span><span class="p">.</span> <span class="n">Other</span> <span class="k">names</span> <span class="n">may</span> <span class="n">be</span> <span class="n">trademarks</span> <span class="k">of</span> <span class="n">their</span> <span class="n">respective</span>
+<span class="n">owners</span><span class="p">.</span>
+
+<span class="k">Type</span> <span class="s1">'help;'</span> <span class="k">or</span> <span class="s1">'</span><span class="se">\h</span><span class="s1">'</span> <span class="k">for</span> <span class="n">help</span><span class="p">.</span> <span class="k">Type</span> <span class="s1">'</span><span class="se">\c</span><span class="s1">'</span> <span class="k">to</span> <span class="n">clear</span> <span class="n">the</span> <span class="k">current</span> <span class="k">input</span> <span class="k">statement</span><span class="p">.</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> 
+</code></pre></div></div>
+
+<h4 id="修改数据库编码">修改数据库编码</h4>
+<p>由于mysql默认编码为<code class="highlighter-rouge">latin</code>如果不修改的话中文会导致数据库乱码报错，所以我们要修改为<code class="highlighter-rouge">utf8</code></p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span> <span class="err">打开</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span><span class="err">配置文件</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span>
+<span class="o">#</span> <span class="err">写入以下代码</span>
+
+<span class="p">[</span><span class="n">mysqld</span><span class="p">]</span>
+<span class="n">character</span><span class="o">-</span><span class="k">set</span><span class="o">-</span><span class="n">server</span> <span class="o">=</span> <span class="n">utf8</span>
+<span class="p">[</span><span class="n">client</span><span class="p">]</span>
+<span class="k">default</span><span class="o">-</span><span class="n">character</span><span class="o">-</span><span class="k">set</span> <span class="o">=</span> <span class="n">utf8</span>
+<span class="p">[</span><span class="n">mysql</span><span class="p">]</span>
+<span class="k">default</span><span class="o">-</span><span class="n">character</span><span class="o">-</span><span class="k">set</span> <span class="o">=</span> <span class="n">utf8</span>
+
+<span class="o">#</span> <span class="err">查看数据库编码</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">variables</span> <span class="k">like</span> <span class="s1">'%char%'</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="o">|</span> <span class="n">Variable_name</span>            <span class="o">|</span> <span class="n">Value</span>                      <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="o">|</span> <span class="n">character_set_client</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_connection</span> <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_database</span>   <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_filesystem</span> <span class="o">|</span> <span class="n">binary</span>                     <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_results</span>    <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_server</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_system</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_sets_dir</span>       <span class="o">|</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">share</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">charsets</span><span class="o">/</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="mi">8</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="安装phpmyadmin">安装phpmyadmin</h3>
+<p>不必要的情况下我还是喜欢可视化的操作mysql，开源的phpmyadmin就很不错！</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装phpmyadmin</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>phpmyadmin
+<span class="c"># 虽然我们安装好了，但是phpmyadmin基于php环境开发的，所以我们需要把它放到网站的根目录/var/www，我这里在网站的根目录下放了一个软连接。</span>
+<span class="nv">$ </span><span class="nb">sudo ln</span> <span class="nt">-s</span> /usr/share/phpmyadmin /var/www
+</code></pre></div></div>
+
+<p>输入网址即可： http://localhost/phpmyadmin</p>
+
+<p>这次部署Ubuntu Server体会不少，我真是越来越喜欢linux了，它真是一个非常有魅力的系统！哈哈哈，到这里吧，太晚了要回寝室睡觉了–<br />
+本篇文章如有写的不足之处，还请您多多指教！88！</p>
+
+
+</article>
+
+<article id="post__content">
+    <h1 id="post__title" data-identifier="2018-11-08">Ubuntu Server部署日记</h1>
+
+    
+    <div id="article-meta">
+        <hr style="margin: 10px 0;"/>
+        <div class="post-meta">
+            <span>作者:
+            <author>Hong-hai zhang</author></span>
+            <span>类别:<a href="/404#">
+            <category></category></a></span>
+            <span>时间:
+            <time>2018-11-08</time></span>
+            <span>评分:
+            <score>10.0</score></span>
+        </div>
+    </div>
+    
+
+    <p> 出于挂一些签到软件的原因我一直在用Windows Server2012，因为服务器配置较低图形界面操作卡的要死，干脆直接上纯命令操作系统的linux。
+关于linux发行版我几乎都玩过。在选择linux服务器这块也没有太犹豫，我个人比较痴情Ubuntu，我个人用户对于服务器要求没有那么高，所以选择了 Ubuntu Server 16.04.1 LTS。不过我第一次部署纯命令操作系统，部署的过程中还是遇到一些小麻烦，不过办法总比困难多嘛！</p>
+
+<h2 id="root登录">root登录</h2>
+<p>首先，使用<a href="http://linux.51yip.com/search/ssh?achuan.io">ssh命令</a>在终端登录到远程主机</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>achuan@achuan-pc:~<span class="nv">$ </span><span class="nb">sudo </span>ssh ubuntu@139.199.105.72
+<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> achuan 的密码： 
+ubuntu@139.199.105.72<span class="s1">'s password:
+The authenticity of host '</span>139.199.105.72 <span class="o">(</span>139.199.105.72<span class="o">)</span><span class="s1">' can'</span>t be established.
+ECDSA Key fingerprint is SHA256:HNndgD6z/I2L8DzCA5nk9w9CEzHpW9WouGAmkMDR7LK.
+Are you sure you want to <span class="k">continue </span>connecting <span class="o">(</span><span class="nb">yes</span>/no<span class="o">)</span>? <span class="nb">yes
+</span>ubuntu@139.199.105.72<span class="s1">'s password:
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-130-generic x86_64)
+
+* Documentation:    https://help.ubuntu.com
+* Management:       https://landscape.canonical.com
+* Support:          https://ubuntu.com/advantage
+New release '</span>18.04.1 LTS<span class="s1">' available.
+Run '</span><span class="k">do</span><span class="nt">-release-upgrade</span><span class="s1">' to upgrade to it.
+
+Last login: Mon Nov 5 16:38:39 2018 From 119.28.7.195
+ubuntu@VM-22-96-ubuntu:~$
+</span></code></pre></div></div>
+
+<p>这时，登录时命令行出现了警告，它说这是一个新的地址，存在安全风险。简单了解一下之后，我选择面对风险　yes 顺利登入远程主机。<br />
+对我来说登入后第一件事莫过于设置root密码</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>passwd root
+</code></pre></div></div>
+
+<h2 id="安装-vim">安装 vim</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装vim</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>vim-gtk
+......
+Do you want to <span class="k">continue</span> <span class="o">[</span>Y/n]? Y
+</code></pre></div></div>
+
+<p>命令行敲入　vi ,Tab一下，不出问题已经有　viｍ</p>
+
+<h3 id="配置vim">配置vim</h3>
+<p>强迫症的我，简单的配置一下…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/vim/vimrc
+</code></pre></div></div>
+
+<p>文件内容里有这么一句：<code class="highlighter-rouge">syntax on</code>它的意思是“语法高亮”，别注释它！为了提升体验我们需要set一下</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set </span>nu          <span class="c"># 在左侧显示行号</span>
+<span class="nb">set </span><span class="nv">tabstop</span><span class="o">=</span>4   <span class="c"># tab长度设置为4</span>
+<span class="nb">set </span>cursorline  <span class="c"># 覆盖文件时不备份</span>
+<span class="nb">set </span>ruler       <span class="c"># 在右下角显示状态栏</span>
+<span class="nb">set </span>autoindent  <span class="c"># 自动锁紧</span>
+<span class="nb">set </span>showmatch   <span class="c"># 高亮显示匹配的括号</span>
+<span class="c"># 编码设置</span>
+<span class="nb">set </span><span class="nv">fencs</span><span class="o">=</span><span class="nv">utf</span><span class="o">=</span>uft-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+<span class="c"># 语言设置</span>
+<span class="nb">set </span><span class="nv">langmenu</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nb">set </span><span class="nv">helplang</span><span class="o">=</span>cn
+</code></pre></div></div>
+
+<h2 id="安装apache">安装apache</h2>
+<p>我们使用源安装<a href="https://zh.wikipedia.org/wiki/Apache_HTTP_Server?achuan.io">apache</a></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>apache2
+</code></pre></div></div>
+
+<h3 id="配置apache">配置apache</h3>
+<p>启动apache的两种姿势</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /etc/init.d/apache2 start
+<span class="c"># 或</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service apache2 star
+<span class="c"># [start] [restart] [stop] [status]</span>
+</code></pre></div></div>
+
+<h3 id="推送文件到网站根目录">推送文件到网站根目录</h3>
+<p>在这里我遇到一个问题</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@achuan-pc:/home/achuan/视频/ubuntu# scp <span class="nt">-r</span> htdocs ubuntu@139.199.105.72:/var/www
+ubuntu@139.199.105.72<span class="s1">'s password: 
+scp: /var/www/htdocs: Permission denied
+</span></code></pre></div></div>
+
+<p>用 scp 推送文件夹的时候出现了<code class="highlighter-rouge">Permission denied</code><br />
+what the?　我被拒绝了？</p>
+
+<p>想了想原来是网站的根目录<code class="highlighter-rouge">/var/www</code>没有写入权限，让我们chmod一下？</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh ubuntu@139.199.105.72
+......
+<span class="nv">$ </span><span class="nb">sudo chmod </span>777 <span class="nt">-R</span> /var/www
+</code></pre></div></div>
+
+<p>已经解决了让我们再 scp 一下！</p>
+
+<h3 id="解决ssh自动断连">解决ssh自动断连</h3>
+<p>这个自动断连就让我很是难受，不管是利用终端还是客户端工具都会出现这个问题，经过了解原来是正常的…<br />
+使用ssh连接远程服务器隔段时间没有任何操作，客户端与服务器就会自动断连，解决办法如下：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vim /etc/ssh/sshd_config
+<span class="nv">$ </span><span class="nb">sudo </span>service sshd reload
+</code></pre></div></div>
+
+<p>我们需要修改客户端或服务器端　<code class="highlighter-rouge">/etc/ssh/sshd_config</code>　配置文件，找到<code class="highlighter-rouge">ClientAliveInterval</code>，改成 60（分钟单位，默认0）意思的每一分钟向客户端发送一个消息，用于保持连接，</p>
+
+<h3 id="virtualhost配置">VirtualHost配置</h3>
+<p>关于ubuntu serverd的apache配置文件在<code class="highlighter-rouge">/etc/apache2/apache.conf</code>当apache启动时会自动读取这个文件的配置信息，而其他的一些配置文件，则是通过Include指令引入。奇怪的是我找不到httpd.conf，算了自己动手丰衣足食</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入apache文件夹 &gt; 创建 httpd.conf</span>
+<span class="nv">$ </span><span class="nb">cd</span> /etc/apache2/ <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>vi httpd.conf
+<span class="c"># 并写入以下配置内容</span>
+
+<span class="c"># 如果你的服务器有多个IP、不同的虚拟用户时，你可以更改它</span>
+&lt;VirtualHost <span class="o">[</span>IP]:[端口]&gt;
+...
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost <span class="k">*</span>:80&gt;
+	ServerAdmin achuan@achuan.io         <span class="c"># 网站管理员邮箱，可填可不填</span>
+	DocumentRoot <span class="s2">"/var/www/chenbtpig"</span>    <span class="c"># 网站根目录</span>
+	ServerName chenchen1112.cn           <span class="c"># 域名</span>
+	&lt;Directory <span class="s2">"/var/www/chenbtpig"</span><span class="o">&gt;</span>	 <span class="c"># 网站根目录权限设置</span>
+		Options Indexes FollowSymLinks   <span class="c"># 禁止显示Apache目录</span>
+		AllowOverride All				 <span class="c"># 允许重写apache默认配置</span>
+		Order allow,deny				 <span class="c"># 允许所有</span>
+		Allow from all
+	&lt;/Directory&gt;
+	Errorlog <span class="s2">"logs/chenchen1112.cn-error.log"</span>   <span class="c"># 网站错误日志</span>
+	CustomLog <span class="s2">"logs/chenchen1112.cn-access.log"</span> common   <span class="c"># 网站访问日志</span>
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost <span class="k">*</span>:80&gt;
+	ServerAdmin achuan@achuan.io
+	DocumentRoot <span class="s2">"/var/www/code_rain"</span>
+	ServerName lmissyou.club
+	&lt;Directory <span class="s2">"/var/www/code_rain"</span><span class="o">&gt;</span>
+		Options Indexes FollowSymLinks
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	&lt;/Directory&gt;
+	Errorlog <span class="s2">"logs/lmissyou.club-errpr.log"</span>
+	CustomLog <span class="s2">"logs/lmissyou.club-access.log"</span> common
+&lt;/VirtualHost&gt;
+
+<span class="c"># 打开apache配置文件并写入“Include httpd.conf”</span>
+<span class="nv">$sudo</span> vim /etc/apache2/apache2.conf
+
+<span class="c"># 修改hosts /etc/hosts</span>
+<span class="nv">$ </span><span class="nb">sudo </span>vi /etc/hosts
+<span class="c"># 写入　IP与域名</span>
+<span class="c"># 139.199.105.72 www.chenchen.1112.cn</span>
+</code></pre></div></div>
+
+<h4 id="网站首页的优先级">网站首页的优先级</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#用于VirtualHost括号内，优先级从左往右依次降低</span>
+DirectoryIndex index.php index.html
+</code></pre></div></div>
+
+<h4 id="错误日志">错误日志</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 用于VirtualHost括号内，在apache配置目录应有logs文件夹，没有自己创建</span>
+Errorlog <span class="s2">"logs/chenchen1112.cn-error.log"</span>
+</code></pre></div></div>
+
+<h4 id="访问日志">访问日志</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CustomLog <span class="s2">"logs/chenchen1112.cn-access.log"</span> common
+</code></pre></div></div>
+
+<h4 id="错误页面的显示">错误页面的显示</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ErrorDocument 404/missing.html
+</code></pre></div></div>
+
+<h2 id="安装php56">安装php5.6</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 添加PPA源</span>
+<span class="nv">$ </span><span class="nb">sudo </span>add-apt-repository ppa:ondrej/php
+<span class="c"># 若报错或没有发现命令则执行　$ sudo apt-get install python-software-properties</span>
+<span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装php5.6</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>php5.6
+<span class="c"># 验证版本</span>
+<span class="nv">$ </span><span class="nb">sudo </span>php <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>apache2.conf文件，这个文件通过包含其他配置文件涵盖了所
+让我们写个试试？</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 进入www并创建新文件index.php</span>
+<span class="nv">$ </span><span class="nb">cd</span> /var/www <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>vi index.php
+<span class="c"># 写入到index.php	</span>
+&lt;?php
+phpinfo<span class="o">()</span><span class="p">;</span>
+?&gt;
+</code></pre></div></div>
+
+<h3 id="配置php">配置php</h3>
+<p>ubuntu serverd的php配置文件在<code class="highlighter-rouge">/etc/php/5.6/apache2/php.ini</code><br />
+近期发现php的时区是GMT（格林威治平时），而不是GMT+8（东八区）它们的显示时间会相差8个小时，这怎么行！</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 打开php.ini配置文件</span>
+<span class="nv">$ </span><span class="nb">sudo </span>vi /etc/php/5.6/apache2/php.ini
+<span class="c"># 找到 date.timezone 并赋值 PRC（中华人民共和国英文缩写） date.timezone = PRC</span>
+</code></pre></div></div>
+
+<p>输入我的公网ip查看一下<br />
+<img src="/assets/article/2018-11-08-Ubuntu-Deployment/phpinfo.png?achuan.io" alt="Alt text" title="php5.6安装成功！Cheers!" /></p>
+
+<h2 id="安装mysql">安装mysql</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装mysql服务器与客户端，安装时会有两次交互，关于mysql密码的设置</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>mysql-server mysql-client
+
+<span class="c"># 查看安装是否成功</span>
+<span class="nv">$ </span><span class="nb">sudo </span>netstat <span class="nt">-tap</span> | <span class="nb">grep </span>mysql
+
+root@VM-22-96-ubuntu:/etc/mysql/mysql.conf.d# <span class="nb">sudo </span>netstat <span class="nt">-tap</span> | <span class="nb">grep </span>mysql
+tcp6       0      0 <span class="o">[</span>::]:mysql              <span class="o">[</span>::]:<span class="k">*</span>                  LISTEN      7818/mysqld   
+</code></pre></div></div>
+
+<h3 id="配置mysql">配置mysql</h3>
+<p>启动mysql的两种姿势</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /etc/init.d/mysql start
+<span class="c"># 或</span>
+<span class="nv">$ </span><span class="nb">sudo </span>service mysql star
+<span class="c"># [start] [restart] [stop] [status]</span>
+</code></pre></div></div>
+
+<h4 id="远程连接mysql">远程连接mysql</h4>
+<p>ubuntu serverd的mysql配置文件在<code class="highlighter-rouge">/etc/mysql/mysql.conf.d/mysqld.cnf</code></p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span> <span class="err">修改配置文件的端口绑定</span>	
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">mysql</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">mysqld</span><span class="p">.</span><span class="n">cnf</span>
+<span class="o">#</span> <span class="err">注释掉</span> <span class="n">bind</span><span class="o">-</span><span class="n">adress</span> <span class="o">=</span> <span class="mi">127</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span>
+<span class="o">#</span> <span class="err">进入数据库</span>
+<span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+<span class="o">#</span> <span class="err">选择使用的数据库</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">mysql</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">修改</span><span class="k">host</span><span class="err">值（以通配符</span> <span class="o">%</span> <span class="err">增加主机</span><span class="o">/</span><span class="n">IP</span><span class="err">地址）当然你可以可以直接增加</span><span class="n">IP</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">update</span> <span class="k">user</span> <span class="k">set</span> <span class="k">host</span> <span class="o">=</span> <span class="s1">'%'</span> <span class="k">where</span> <span class="k">user</span> <span class="o">=</span> <span class="s1">'root'</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">让权限立即生效</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">flush</span> <span class="k">privileges</span><span class="p">;</span>
+<span class="o">#</span> <span class="err">查看修改是否成功　</span><span class="o">**%</span>         <span class="o">|</span> <span class="n">root</span><span class="o">**</span><span class="err">说明远程连接已经开启</span> 
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="k">host</span><span class="p">,</span> <span class="k">user</span> <span class="k">from</span> <span class="k">user</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+<span class="o">|</span> <span class="k">host</span>      <span class="o">|</span> <span class="k">user</span>             <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+<span class="o">|</span> <span class="o">%</span>         <span class="o">|</span> <span class="n">root</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">debian</span><span class="o">-</span><span class="n">sys</span><span class="o">-</span><span class="n">maint</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">mysql</span><span class="p">.</span><span class="k">session</span>    <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">mysql</span><span class="p">.</span><span class="n">sys</span>        <span class="o">|</span>
+<span class="o">|</span> <span class="n">localhost</span> <span class="o">|</span> <span class="n">root</span>             <span class="o">|</span>
+<span class="o">+</span><span class="c1">-----------+------------------+</span>
+
+
+<span class="o">#</span> <span class="err">如下连接成功！</span>
+
+<span class="n">achuan</span><span class="o">@</span><span class="n">achuan</span><span class="o">-</span><span class="n">pc</span><span class="p">:</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apache2</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">h</span> <span class="mi">139</span><span class="p">.</span><span class="mi">199</span><span class="p">.</span><span class="mi">105</span><span class="p">.</span><span class="mi">72</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+<span class="n">Enter</span> <span class="n">password</span><span class="p">:</span> 
+<span class="n">Welcome</span> <span class="k">to</span> <span class="n">the</span> <span class="n">MySQL</span> <span class="n">monitor</span><span class="p">.</span>  <span class="n">Commands</span> <span class="k">end</span> <span class="k">with</span> <span class="p">;</span> <span class="k">or</span> <span class="err">\</span><span class="k">g</span><span class="p">.</span>
+<span class="n">Your</span> <span class="n">MySQL</span> <span class="k">connection</span> <span class="n">id</span> <span class="k">is</span> <span class="mi">6</span>
+<span class="n">Server</span> <span class="k">version</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">7</span><span class="p">.</span><span class="mi">24</span><span class="o">-</span><span class="mi">0</span><span class="n">ubuntu0</span><span class="p">.</span><span class="mi">16</span><span class="p">.</span><span class="mi">04</span><span class="p">.</span><span class="mi">1</span> <span class="p">(</span><span class="n">Ubuntu</span><span class="p">)</span>
+
+<span class="n">Copyright</span> <span class="p">(</span><span class="k">c</span><span class="p">)</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="n">Oracle</span> <span class="k">and</span><span class="o">/</span><span class="k">or</span> <span class="n">its</span> <span class="n">affiliates</span><span class="p">.</span> <span class="k">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="p">.</span>
+
+<span class="n">Oracle</span> <span class="k">is</span> <span class="n">a</span> <span class="n">registered</span> <span class="n">trademark</span> <span class="k">of</span> <span class="n">Oracle</span> <span class="n">Corporation</span> <span class="k">and</span><span class="o">/</span><span class="k">or</span> <span class="n">its</span>
+<span class="n">affiliates</span><span class="p">.</span> <span class="n">Other</span> <span class="k">names</span> <span class="n">may</span> <span class="n">be</span> <span class="n">trademarks</span> <span class="k">of</span> <span class="n">their</span> <span class="n">respective</span>
+<span class="n">owners</span><span class="p">.</span>
+
+<span class="k">Type</span> <span class="s1">'help;'</span> <span class="k">or</span> <span class="s1">'</span><span class="se">\h</span><span class="s1">'</span> <span class="k">for</span> <span class="n">help</span><span class="p">.</span> <span class="k">Type</span> <span class="s1">'</span><span class="se">\c</span><span class="s1">'</span> <span class="k">to</span> <span class="n">clear</span> <span class="n">the</span> <span class="k">current</span> <span class="k">input</span> <span class="k">statement</span><span class="p">.</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> 
+</code></pre></div></div>
+
+<h4 id="修改数据库编码">修改数据库编码</h4>
+<p>由于mysql默认编码为<code class="highlighter-rouge">latin</code>如果不修改的话中文会导致数据库乱码报错，所以我们要修改为<code class="highlighter-rouge">utf8</code></p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span> <span class="err">打开</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span><span class="err">配置文件</span>
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="p">.</span><span class="n">cnf</span>
+<span class="o">#</span> <span class="err">写入以下代码</span>
+
+<span class="p">[</span><span class="n">mysqld</span><span class="p">]</span>
+<span class="n">character</span><span class="o">-</span><span class="k">set</span><span class="o">-</span><span class="n">server</span> <span class="o">=</span> <span class="n">utf8</span>
+<span class="p">[</span><span class="n">client</span><span class="p">]</span>
+<span class="k">default</span><span class="o">-</span><span class="n">character</span><span class="o">-</span><span class="k">set</span> <span class="o">=</span> <span class="n">utf8</span>
+<span class="p">[</span><span class="n">mysql</span><span class="p">]</span>
+<span class="k">default</span><span class="o">-</span><span class="n">character</span><span class="o">-</span><span class="k">set</span> <span class="o">=</span> <span class="n">utf8</span>
+
+<span class="o">#</span> <span class="err">查看数据库编码</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">variables</span> <span class="k">like</span> <span class="s1">'%char%'</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="o">|</span> <span class="n">Variable_name</span>            <span class="o">|</span> <span class="n">Value</span>                      <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="o">|</span> <span class="n">character_set_client</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_connection</span> <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_database</span>   <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_filesystem</span> <span class="o">|</span> <span class="n">binary</span>                     <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_results</span>    <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_server</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_set_system</span>     <span class="o">|</span> <span class="n">utf8</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">character_sets_dir</span>       <span class="o">|</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">share</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">charsets</span><span class="o">/</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------------+----------------------------+</span>
+<span class="mi">8</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="安装phpmyadmin">安装phpmyadmin</h3>
+<p>不必要的情况下我还是喜欢可视化的操作mysql，开源的phpmyadmin就很不错！</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 习惯性的更新源...</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="c"># 安装phpmyadmin</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>phpmyadmin
+<span class="c"># 虽然我们安装好了，但是phpmyadmin基于php环境开发的，所以我们需要把它放到网站的根目录/var/www，我这里在网站的根目录下放了一个软连接。</span>
+<span class="nv">$ </span><span class="nb">sudo ln</span> <span class="nt">-s</span> /usr/share/phpmyadmin /var/www
+</code></pre></div></div>
+
+<p>输入网址即可： http://localhost/phpmyadmin</p>
+
+<p>这次部署Ubuntu Server体会不少，我真是越来越喜欢linux了，它真是一个非常有魅力的系统！哈哈哈，到这里吧，太晚了要回寝室睡觉了–<br />
+本篇文章如有写的不足之处，还请您多多指教！88！</p>
+
+
+</article> <!-- end #post__content -->
+
+
+<!--<h2 id="post__discuss">文章赞赏</h2>-->
+<!--<img src="/assets/images/like.png" alt="赞赏码" class="image-center">-->
+
+<h2 id="post__discuss">文章评论</h2>
+<div id="comment"></div>
+
+<script>
+  $(document).ready(function(){
+      var disq = new iDisqus('comment', {
+        forum: 'https-achuan-io',
+        api: 'https://api.achuan.io/api/',
+        site: 'https://achuan.io',
+        mode: 2,
+        timeout: 3000,
+        init: true,
+      });
+  });
+</script>
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=achuan.io/2018-11-08-Ubuntu-Deployment&title=Ubuntu Server部署日记&pics=/assets/images/avatar.jpg" target="_blank"></a>
+  <a id="icon-qzone" class="fontello" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=achuan.io/2018-11-08-Ubuntu-Deployment&title=Ubuntu Server部署日记&pics=/assets/images/avatar.jpg" target="_blank"></a>
+  <p class="share-info">分享到</p>
+</div>
+
+
+        <p id="copyright">
+  © 2018 - 2019 
+  <a href="http://pages.github.com?achuan.io">Github Pages</a> & 
+  <a href="http://jekyllrb.com?achuan.io">Jekyll</a> & 
+  <a href="https://disqus.com?achuan.io">Disqus</a>
+</p>
+      </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">章节列表</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.staticfile.org/nprogress/0.1.2/nprogress.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.3/jquery.min.js"></script>
+<script src="/assets/js/jquery.pjax.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/iDisqus.min.js"></script>
+
+
+    <script>
+    var h0 = document.body.clientHeight;
+    var h1 = document.getElementById("avatar").offsetHeight;
+    var h2 = document.getElementById("tags__bottom").offsetHeight;
+    var h =  document.getElementById("tags__ul").scrollHeight;
+
+    var obj    = document.getElementById("tags__ul");
+    var items  = obj.getElementsByTagName("li");
+    var screen_h  = h0 - h1 - h2 - 89;
+    if (h > screen_h) {
+      obj.style.height = screen_h + "px";
+      //obj.style.paddingBottom = 15 + 'px';
+      obj.style.overflowY = "scroll";
+      obj.style.overflowX = "hidden";
+      items[0].style.borderTop = "none";
+    }
+    </script>
+
+   </body>
+ </html>

@@ -1,0 +1,108 @@
+@media screen and (max-width: 585px) {
+    #tags {
+        display: contents;
+        z-index: 99999;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 48px);
+        height: 48px;
+        background: transparent;
+        border: 0;
+    }
+
+    #avatar {
+        display: none;
+    }
+
+    #tags__ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: 0;
+    }
+
+    #tags__bottom {
+        display: none;
+    }
+
+    .tags__li {
+        text-align: center;
+        width: 100%;
+        line-height: 3.8;
+        cursor: pointer;
+        background-color: #e6e9ed;
+        border: 0;
+        padding: 0;
+        height: 48px;
+    }
+
+    .tags__li:hover {
+        color: #2eb695;
+        background: #fafafa;
+    }
+
+    .tags__li.active {
+        margin-right: -1px;
+        color: #2eb695;
+        background: #fafafa;
+        position: relative;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+        border: 0;
+    }
+
+    .tags__li.active:before, .tags__li.active:after {
+        width: 6px;
+        height: 6px;
+        background: transparent;
+        position: absolute;
+        right: -3px;
+    }
+
+    .tags__li.active:before {
+        border: 0;
+    }
+
+    .tags__li.active:after {
+        border: 0;
+    }
+
+    .tags-btn {
+        color: #a6a6a7;
+        -webkit-transition: color .3s, background .3s;
+        -moz-transition: color .3s, background .3s;
+        -ms-transition: color .3s, background .3s;
+        -o-transition: color .3s, background .3s;
+        transition: color .3s, background .3s;
+        border: 0;
+    }
+
+    .tags-btn.active:hover {
+        color: #2eb695;
+        background: #fafafa;
+    }
+
+    .comment_number {
+        padding: 5px 7px 5px 5px;
+        background-color: #e6e9ed;
+        color: #2eb695;
+        font-style: normal;
+        border-radius: 50%;
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        line-height: 1;
+    }
+    
+    .blogroll {
+        display: none;
+    }
+}

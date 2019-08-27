@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description>阿川的个人博客</description>      
+        <link>http://0.0.0.0:4000</link>
+        <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>说说消失这二十多天发生的事情</title>
+                <description>&lt;p&gt;消失这二十多天，出了很多事情：离职，电脑坏了，找工作还有一大堆其他事情…可能这些东西看着也没啥。可是二十多天坏的电脑让我有点感觉人生低谷(；′⌒`)，先说第一件事情吧离职。&lt;/p&gt;
+
+&lt;h2 id=&quot;离职&quot;&gt;离职&lt;/h2&gt;
+&lt;p&gt;在公司3个月左右就想离职了，其实我不是很讨厌前后端不分离，只是公司那项目也太乱了。Model不是Model。css+js+php+html一起写。我也想把样式分离出来，但是公司整体项目要统一。我特么服了，一大堆转义符很是烦人。&lt;/p&gt;
+
+&lt;p&gt;还有就是工资的拖欠。我觉得公司有困难大家一起可以度，但是公司无公告无邮箱拖欠工资，问财务部根本不说话。我真是对公司这些混日子的很是反感。&lt;/p&gt;
+
+&lt;h2 id=&quot;电脑坏了&quot;&gt;电脑坏了&lt;/h2&gt;
+&lt;p&gt;电脑坏了完全是我自己做的…我神舟是大问题没有，小问题不断。那天晚上写项目写完了，我像往常一样把笔记本放在床上折叠桌上并盖上了盖。
+不知道是凌晨几点，我一脚把折叠桌踢下了床，大概笔记本离地板有半米。笔记本正朝下摔还挺响…当时意识比较模糊捡起来又睡着了。&lt;/p&gt;
+
+&lt;p&gt;第二天起来也没在意，我擦擦电脑开机打开PHPSTORM，大概几分钟电脑开始出现报警声音一长一短不一会儿非正常关机了，不慌不慌反正也不是第一次了。直接拆开主板检查了一遍主板是不是哪摔松了，内存条没有问题，主板什么也是没有问题的。开机后打开Ps打开别的软件，不一会就报警了，报警声音和刚才一样。我直接把主板全拆了重新排线。就这样试了好多次。我有点慌了!!!∑(ﾟДﾟノ)ノ&lt;/p&gt;
+
+&lt;p&gt;当时准备联系郑州神舟授权售后，然后想想授权售后估计没啥用（真几把没用），打开QQ联系买神舟电脑店长，找老船长问他解决问题。结果是说主板可能出问题了，他搞不了让我神舟苏州总部售后进行返厂，返厂且最低15天。谷歌搞一下返厂攻略。大家好像都是不太推荐。当时先放下返厂，找修电脑的。结果是我感觉他们只会清灰重装、组装电脑…我TM…问了十几家没有一家能修。&lt;/p&gt;
+
+&lt;p&gt;找的很烦，只能返厂了，售后查我的保修期在8.31号后就过期了，当时还沾沾自喜赶上时候（现在想想真几把傻屌）。大概2天顺风寄过去了，因为11号周六不上班给拒收了，12号早上签收，下午给我打电话确认电脑。15号检查到问题并报价：“主板5000、键盘300”并监测到主板进水不保修。&lt;/p&gt;
+
+&lt;p&gt;当时几把就火了，说劳资笔记本主板进水不保修？？？劳资键盘是排线断了，换根新的接口就十几块钱。你这什么意思，还想给我换个新键盘？？？主板坏了她说技术不修，直接换。是直接换！当时忍不住就想骂人，我说明写的清清楚楚的只修不换，我要换主板还要你们售后？？？主板牵扯到显卡，修不了就换Mac。几把当时就二种选择，修掏钱，不修寄回来。也就是说忙活一星期啥都没干成。&lt;/p&gt;
+
+&lt;p&gt;给客服打电话让转接技术，客服说公司没这规定，有什么事情给她说。他妈的当时就想骂人，想要打电话告他们。我要客服工号，客服一个劲说要干什么干什么？？？我要告你们欺诈消费者？？？客服说一句：你去告吧！接着就挂了电话。我日尼玛这能忍？？？好好好不让你们修了，给我寄回来寄回来好不好。客服说包装一下给我寄回来，货到付款。&lt;/p&gt;
+
+&lt;p&gt;我尼玛当初修的时候说我付一半，你们付一半。这时候给我说货到付款…客服：“公司有规定，没有修的一律货到付款！”。&lt;br /&gt;
+心累…感觉自己太年轻了…我好难啊(；′⌒`)&lt;/p&gt;
+
+&lt;p&gt;后来历经周转找到在郑州百脑汇找到一家硬件芯片维修，&lt;strong&gt;开元世纪电脑维修&lt;/strong&gt;大哥技术炒鸡帮！主板显卡接触不良，没多久就搞好了花了240&lt;/p&gt;
+
+&lt;h2 id=&quot;找工作&quot;&gt;找工作&lt;/h2&gt;
+
+&lt;p&gt;在郑州顶着太阳40°找工作真是是舒服…上午跑下午跑，一般一天面试俩，最多三家。我商城这块太弱，一直在找商城这块公司。有几个公司真是挺难受的，事之前联系好好的，到了公司给经理打电话，给我说招满了…明二十六号去试岗三天祝我好运吧。&lt;/p&gt;
+</description>
+                <pubDate>Sun, 25 Aug 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-08-25-tech-What-happened</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-08-25-tech-What-happened</guid>
+            </item>
+        
+            <item>
+                <title>FlexSlider 和 RaxusSlider 插件相关参数</title>
+                <description>&lt;p&gt;&lt;a name=&quot;p9gDE&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;flexslider&quot;&gt;FlexSlider&lt;/h2&gt;
+
+&lt;p&gt;链接：&lt;a href=&quot;http://flexslider.woothemes.com/&quot;&gt;http://flexslider.woothemes.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FlexSlider &lt;/strong&gt;是一个非常出色的 jQuery 滑动切换插件，它支持所有主流浏览器，并有淡入淡出效果。适合所有初级和高级网页设计师使用。关键的一点是该工具还是开源的。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.flexslider'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;flexslider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fade&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;              &lt;span class=&quot;c1&quot;&gt;//String: Select your animation type, &quot;fade&quot; or &quot;slide&quot;图片变换方式：淡入淡出或者滑动&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;slideDirection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;horizontal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;//String: Select the sliding direction, &quot;horizontal&quot; or &quot;vertical&quot;图片设置为滑动式时的滑动方向：左右或者上下&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;slideshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                &lt;span class=&quot;c1&quot;&gt;//Boolean: Animate slider automatically 载入页面时，是否自动播放&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;slideshowSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;           &lt;span class=&quot;c1&quot;&gt;//Integer: Set the speed of the slideshow cycling, in milliseconds 自动播放速度毫秒&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;animationDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;//Integer: Set the speed of animations, in milliseconds动画淡入淡出效果延时&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;directionNav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;//Boolean: Create navigation for previous/next navigation? (true/false)是否显示左右控制按钮&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;controlNav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage是否显示控制菜单&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;keyboardNav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;              &lt;span class=&quot;c1&quot;&gt;//Boolean: Allow slider navigating via keyboard left/right keys键盘左右方向键控制图片滑动&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;mousewheel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;              &lt;span class=&quot;c1&quot;&gt;//Boolean: Allow slider navigating via mousewheel鼠标滚轮控制制图片滑动&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;prevText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Previous&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;           &lt;span class=&quot;c1&quot;&gt;//String: Set the text for the &quot;previous&quot; directionNav item&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;nextText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Next&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//String: Set the text for the &quot;next&quot; directionNav item&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pausePlay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//Boolean: Create pause/play dynamic element&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pauseText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Pause'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;//String: Set the text for the &quot;pause&quot; pausePlay item&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;playText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Play'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//String: Set the text for the &quot;play&quot; pausePlay item&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;randomize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//Boolean: Randomize slide order 是否随机幻灯片&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;slideToStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;                &lt;span class=&quot;c1&quot;&gt;//Integer: The slide that the slider should start on. Array notation (0 = first slide)初始化第一次显示图片位置&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;animationLoop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Boolean: Should the animation loop? If false, directionNav will received &quot;disable&quot; classes at either end 是否循环滚动&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pauseOnAction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Boolean: Pause the slideshow when interacting with control elements, highly recommended.&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pauseOnHover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;controlsContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;//Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be &quot;.flexslider-container&quot;, &quot;#container&quot;, etc. If the given element is not found, the default action will be taken.&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;manualControls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;//Selector: Declare custom control navigation. Example would be &quot;.flex-control-nav li&quot; or &quot;#tabs-nav li img&quot;, etc. The number of elements in your controlNav should match the number of slides/tabs.自定义控制导航&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;manualControlEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;//String:自定义导航控制触发事件:默认是click,可以设定hover&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){},&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Callback: function(slider) - Fires when the slider loads the first slide&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){},&lt;/span&gt;           &lt;span class=&quot;c1&quot;&gt;//Callback: function(slider) - Fires asynchronously with each slider animation&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){},&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;//Callback: function(slider) - Fires after each slider animation completes&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){}&lt;/span&gt;               &lt;span class=&quot;c1&quot;&gt;//Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)&lt;/span&gt;
+   
+ &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;FAQ01&lt;/strong&gt;：&lt;a href=&quot;http://cn.voidcc.com/question/p-pumryoaf-hm.html&quot;&gt;如何使用flexslider设置多个滑块？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;zWSq9&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;raxus-slider&quot;&gt;Raxus Slider&lt;/h2&gt;
+
+&lt;p&gt;链接：&lt;a href=&quot;https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343&quot;&gt;https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;相比 FlexSlider，也有人会选择使用 Raxus Slider，从代码简洁性上而言，后者能用更少的代码实现同样的效果；不同的是，FlexSlider 是开源免费的，而 Raxus Slider是付费的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565168362478-c1dbae85-6549-4266-85af-8af5c136afba.png#align=left&amp;amp;display=inline&amp;amp;height=468&amp;amp;name=image.png&amp;amp;originHeight=468&amp;amp;originWidth=1024&amp;amp;size=190757&amp;amp;status=done&amp;amp;width=1024&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <pubDate>Wed, 07 Aug 2019 16:54:07 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-08-07-flex-slider-and-raxus-slider</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-08-07-flex-slider-and-raxus-slider</guid>
+            </item>
+        
+            <item>
+                <title>(转)我眼中的技术高手</title>
+                <description>&lt;p&gt;本文转自&lt;a href=&quot;https://github.com/lifesinger/blog/issues/126?achuan.io&quot;&gt;玉伯的博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;今天发了一条&lt;a href=&quot;https://weibo.com/1748374882/zoavsuWAz?achuan.io&quot;&gt;微博&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;会原生 JavaScript 不代表什么，懂 jQuery、YUI 等才真正好。怎么这么多人有原生主义情结呢？走出那点小天地，海阔天高。&lt;/code&gt;&lt;br /&gt;
+很多人已经猜出，这是为了晚上的文章而发，提前收集大家的想法。这个话题，很早就想谈，肯定会引起口水仗，但有些事不辩不明，不理不清，与其和谐社会，不如辛亥革命。&lt;/p&gt;
+
+&lt;h2 id=&quot;奇怪的现象&quot;&gt;奇怪的现象&lt;/h2&gt;
+&lt;p&gt;平时工作，时不时能听到一些困惑、感慨：&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jQuery 虽好，但只会 jQuery，不会原生 JS 是不被大公司认可的。&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;最近半年对原生 JS 有些生疏，得补一补。&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;得好好看看 ECMAScript 规范，把 JS 语言学透彻。&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;和原生情结对应的，是国内程序员特别喜欢研读源码，比如：&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jQuery 源码分析系列&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;YUI 源码分析&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Backbone 及 Underscore 源码解析&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;国内程序员对源码的热衷，可以拿 SeaJS 的数据来看：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article/2019-05-19-tech-whiz/SeaJS.png?achuan.io&quot; alt=&quot;SeaJS数据图片&quot; title=&quot;SeaJS数据&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;fork 数高达 500 多，但 watch 数只有 1000 多，这其实是不正常的。相比而言，RequireJS 的数据正常很多：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article/2019-05-19-tech-whiz/SeaJS.png&quot; alt=&quot;RequireJS数据图片&quot; title=&quot;RequireJS.png?achuan.io&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;简言之，国内与国外相比，有比较明显的两个特点：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;对原生 JS 的学习心更强。&lt;/li&gt;
+  &lt;li&gt;对类库、框架的源码更感兴趣。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这两点看起来很好，可是：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究原生 JS 的优秀文章，大都出自国外程序员。&lt;/li&gt;
+  &lt;li&gt;类库、框架，国人好像一直在研究，鲜有产出。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这肯定跟我们是社会主义国家有关，但我越来越怀疑这一点。&lt;/p&gt;
+
+&lt;h2 id=&quot;语言高手们&quot;&gt;语言高手们&lt;/h2&gt;
+&lt;p&gt;真正的语言高手不多，我不是，正在看这篇文章的你，很可能也不是，而且这一辈子可能都和我一样成为不了语言高手。&lt;/p&gt;
+
+&lt;p&gt;JavaScript（纯语言，不含 DOM 等）高手，在国内屈指可数。周爱民、白露飞、老赵、winter、月影、hax 等等等等，还有一些非常低调的隐士，这些人读 ECMAScript 规范像磕瓜子一样轻松，甚至能花几个晚上就像 BE 大神一样造出一门新语言来。你我等闲之辈，除了佩服之外，只能去谈恋爱。&lt;/p&gt;
+
+&lt;p&gt;工作中，我们需要语言高手吗？肯定的说，需要！可是，我们需要大量语言高手吗？除了特殊岗位，我相信很多公司都不需要！&lt;/p&gt;
+
+&lt;p&gt;题外话：目前为人知的 JS 语言高手里，除了周爱民，我最看好白露飞。这是一个有能力也有潜力造就 SuperScript 的人，最佩服的是他有实际行动，虽然方向未必正确。&lt;/p&gt;
+
+&lt;h2 id=&quot;我们的价值在哪&quot;&gt;我们的价值在哪&lt;/h2&gt;
+&lt;p&gt;除了重新投胎，我们大部分人这辈子都不大可能有兴趣、有能力、有机缘去成为 BE 大神了。这是个残酷的现实，之所以残酷，只因视野太狭窄。&lt;/p&gt;
+
+&lt;p&gt;跳出来，天大地大。妹子多着呢，而且更漂亮。&lt;/p&gt;
+
+&lt;p&gt;Douglas Crockford 的 JS 能力很可能不及 winter，但 Douglas 规范并布道了 JSON 格式，天下留名，惠泽全球。&lt;/p&gt;
+
+&lt;p&gt;Jeremy Ashkenas 的 JS 能力可能还不如老赵，但 Jeremy 用很裸的代码写就了 Backbone，至少影响了一万人，给各个公司创造的价值总额很可能过千万美刀。&lt;/p&gt;
+
+&lt;p&gt;更不用说 Isaac Z. Schlueter，这小伙的 JS 功力很可能还不如我，但 Isaac 打造了 npm 生态圈，而我至今只有精力玩玩 Ant 和 Grunt。&lt;/p&gt;
+
+&lt;p&gt;有幸还看过 Google Docs 的前端源码，那代码和 Java 一样中规中矩。但在 RTE 领域，Google Docs 是王者，里面的专利都一堆一堆的……&lt;/p&gt;
+
+&lt;p&gt;特别想提及的还有开发 Evernote Clearly 的前端工程师，这小伙子的代码，我眼睁睁看着其从很生涩的 JS 代码，逐步演化成上万行牛逼代码还保持了相当好的可维护性。这份代码就像 Clearly 产品一样奕奕生光。&lt;/p&gt;
+
+&lt;p&gt;以及把 jQuery 用得出神入化的 Amazon！前不久那个秒杀国内互联网公司的悬浮菜单，可不是研究原生 JS 能想出来的。&lt;/p&gt;
+
+&lt;p&gt;还有 Facebook 的工程师们，Twitter 的工程师们…… 这些故事大家并不陌生。&lt;/p&gt;
+
+&lt;h2 id=&quot;不是总结的总结&quot;&gt;不是总结的总结&lt;/h2&gt;
+&lt;p&gt;不贬低语言高手们，也不反对去研究编译原理、ECMAScript 规范等。作为技术人员，我们需要这种精神。但是，这仅仅是很小很小很小很小很小的一个领域。并且在这个领域里，永远有比你更聪明的人。&lt;/p&gt;
+
+&lt;p&gt;具体对 JavaScript 语言来说，会用就好。搞清楚数据类型、作用域、闭包、原型链等基本概念，足矣。再深入进去，对绝大部分人来说，除了能满足下心理上的优越感，对实际工作不会有任何实质性帮助。&lt;/p&gt;
+
+&lt;p&gt;语言的本质和互联网一样，只是工具，是剪刀、石头、布。让张小泉去研究怎么做剪刀就好，我们用好剪头，去剪出各种窗花，更有意思。还有一个有趣的事实是，张小泉会造剪头，但剪不好窗花。&lt;/p&gt;
+
+&lt;p&gt;跳出很小很小很小很小很小的语言领域之外，天大地大。永远不要妄自菲薄，每个人身上都背负着独特的使命。去努力寻找自己的，不要老盯着别人的，否则就会成为观众。&lt;/p&gt;
+
+&lt;p&gt;好像跑题了。前面那个奇怪的现象，还有很多想吐槽的点。比如&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;源码只是很小很小的一部分。直接读源码往往无法领会类库框架的精髓。不读源码，用心去用，用时间去体味，偶尔针对性看看源码，往往更能掌握一个类库框架的真谛。
+对社区的贡献可以有很多很多。你的使用经验、用心的 bug 提交、入乡随俗的 pull request、一个认真的评论等等，这些都比去研究什么狗屁源码更有价值。&lt;/li&gt;
+  &lt;li&gt;一个 Java 高手如果说他会原生 Java，那一定会遭来很多人的围观。我还会谭浩强教我的 C 呢，那几个 if else 还有结构体、指针等谁不会。语言之外的领域知识，才真正造就了高手。对于前端来说，会原生 JS 只能打 20 分，另外 40 分需要你深入使用 CSS、DOM、HTML5 等领域知识，还有 20 分需要你对业务需求、架构设计等有真正的运用，这已经 80 分了，不要太贪心。剩下 20 分，只有两个字：勤奋。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article/2019-05-19-tech-whiz/figure.jpg?achuan.io&quot; alt=&quot;郭靖和黄蓉数据图片&quot; title=&quot;郭靖和黄蓉&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;题图：我的网名射雕的来历，喜欢郭靖，无底线。&lt;/p&gt;
+
+&lt;p&gt;（完）&lt;/p&gt;
+</description>
+                <pubDate>Sun, 19 May 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-05-19-tech-whiz</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-05-19-tech-whiz</guid>
+            </item>
+        
+            <item>
+                <title>我的第一部单反相机</title>
+                <description>&lt;p&gt; 咱老百姓，今儿真啊么真高兴！嘿嘿，我的第一部单反相机”佳能EOS 200D 银色单反套机”，今早9:18快递到了！纸箱镇楼！ 
+受苦了宝贝…发货之前忘了指定快递服务，默认发了圆通。看这箱子样子，想起以前我去快递分拣兼职，活太累了管它什么物品都是暴力扔…&lt;br /&gt;
+&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/sealing.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;纸箱镇楼&quot; /&gt;  &lt;br /&gt;
+ 大大小小拆完了就是这样样子了（32G SD卡、新秀丽蓝色双肩包、限量20年礼盒、Luce波点内胆包、EOS 200D机身、电池充电器\线 LC-E17C、锂电池LP-E17、相机宽背带 EW-400D、EF-s 18-55m f/4-5.6 IS STM）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/All the items.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;所有的物品&quot; /&gt; &lt;br /&gt;
+ 看到这个狗头挺烦的，也怪自己吧…在天猫买件肯高UV镜55mm。买回来发现装不上…一看狗头58mm。
+&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/\The lens.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;18-55mm狗头&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; 为了业余摄影，还特地在博客开了个”摄影”分栏，感觉自己这次博客要大改了一下，需要做个几个相册，就那种卡片视图效果，不过我博客逻辑有点特殊，估计需要点时间，让我头疼的是图片，以后摄影照片一张5MB-10MB，就Github在国内这个接入速度有点吃不消，还是要想办法无备案DNS加速。
+&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/Place the sample.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;EOS 200D机身 + 18-55mm狗头合影&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; 这里有点尴尬…本想来拍几张预热看看，没电来了，晚上准备骑行去广场玩玩
+&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/electricity.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;尴尬...刚买回来需要充电&quot; /&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/article/2019-04-20-One-Single-Lens/install.jpg?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;装到内胆包&quot; /&gt;&lt;/p&gt;
+</description>
+                <pubDate>Sat, 20 Apr 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-04-20-One-Single-Lens</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-04-20-One-Single-Lens</guid>
+            </item>
+        
+            <item>
+                <title>2019-03-26 随笔</title>
+                <description>&lt;p&gt; 到今天为止我已经工作了第十六天，我热爱我的工作也非常喜欢我司的文化与业务，公司也非常人性化，我们开发部老总人高马大平易近人，同事们很幽默经常说说笑笑，别的部门不知道怎么样，但是我们开发部氛围很棒，完全没有入职前感觉的紧张与压抑。美中不足的是小区楼下早餐店比较少，但是小区周围的绿化却很棒，出门左右拐都有一条小路，小路两旁种植了很多我认不出的花草和树木，三月的初春，小路两旁的花草和树木都长得格外养眼，它们挨挨挤挤，散发着清香。出了小区向左拐这个小路直通我公司，每次上下班我都喜欢从那里骑共享单车回家，耳机播着她喜欢的歌曲，欣赏着小路两旁的花草和树木，时不时吹来一阵微风把花草散发出清香吹入我的鼻子里，这味道能使我每一天都开心……日子过的可能太安逸了。&lt;/p&gt;
+</description>
+                <pubDate>Tue, 26 Mar 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-03-26-thoughts</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-03-26-thoughts</guid>
+            </item>
+        
+            <item>
+                <title>电信用户投诉攻略</title>
+                <description>&lt;p&gt; 因为我手机卡是合约卡的原因，又临近毕业了，这张卡握在手里真的没得用，36元套餐1G流量，这样的套餐我来说真的是难受，只能更换套餐。以前我都是靠着校园网和移动纯流量卡，校园网出了校门就不能用了，不划算我给停了，那个打幌子的移动纯流量卡更是个坑，在此提醒不推荐大家办理这种卡。&lt;br /&gt;
+ 因为我这卡是合约卡，不能随意转套餐，然后我就拨打10010转人工客服说需求说转腾讯大王卡套餐，不过客服百般阻挠说这个不好那个不好，不过我态度比较强硬，之后在24号晚上8：25我收到了工单。&lt;br /&gt;
+&lt;img src=&quot;/assets/article/2019-02-25-unicom/1.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;电信用户投诉攻略&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; 25号早上11点，我老家周口淮阳县城联通分公司给我打电话说，刚开始通话她说合约卡期间不能更换套餐又说让我准备证件回老家办理业务；我的天，这都9012年了，换个套餐还回老家，
+&lt;img src=&quot;/assets/article/2019-02-25-unicom/2.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;电信用户投诉攻略&quot; /&gt;&lt;br /&gt;
+ 歹说好说最后她加我微信我把证件资料给了她，委托她帮我办理。差不多10分钟左右，她给我打电话说合约卡内不能更换套餐唯理由让我重新办卡…此时想到了一句话“老用户与狗不得办理”
+&lt;img src=&quot;/assets/article/2019-02-25-unicom/3.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;电信用户投诉攻略&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; 客服解决不了事情也不是几次了，直接拔打联通总部电话，这里我搜集了三大运营商总部投诉电话&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;中国联通：010-10015（注意必须要加 010 北京区号）&lt;/li&gt;
+  &lt;li&gt;中国移动：4001110086&lt;/li&gt;
+  &lt;li&gt;中国电信：4008810000&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 果不其然，还是联通总部电话好使，拨打电话后直接人工服务诉说你的事情。差不多5分钟左右，联通总部那边说12小时内会有处理人员主动联系我。然而在下午4：25，那个劝我办理新卡的姐姐给我打电话声音很温柔的说她又试了一下办理好了说下月套餐生效…与上午完全不是一个人。&lt;br /&gt;
+ 下面真香警告！&lt;br /&gt;
+ &lt;img src=&quot;/assets/article/2019-02-25-unicom/4.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;电信用户投诉攻略&quot; /&gt; 
+ &lt;img src=&quot;/assets/article/2019-02-25-unicom/5.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;电信用户投诉攻略&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; 后来我查了一下，其实早在2006年，工信部就出了文件，即〔2006〕630号文件，其中明确规定“在同一移动电话归属地内（俗称“移动电话本地网”），移动通信企业应保证本企业同一网络的原有用户，可以在不改变号码的情况下，自主选择使用本企业的所有资费方案（已停止发展用户的除外）”，这意味着运营商对于目前老用户的限制是违规的。&lt;/p&gt;
+
+&lt;p&gt;在2008年又出台了指导意见，用户对资费方案享有自主选择权，电信企业应给予充分尊重，不得限制用户选择其指定的资费方案，未经用户同意，不得擅自更改与用户约定的资费方案。&lt;/p&gt;
+
+&lt;p&gt; 如果总部投诉都不好使大家可以直接去工信网投诉相应的服务商，这是最有效的解决方法（如果总部投诉不好使再去投诉），成功案例可以google一下&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.chinatcc.gov.cn/cms/shensus?achuan.io&quot;&gt;点击进入电信用户申诉受理中心&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <pubDate>Mon, 25 Feb 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-02-25-unicom</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-02-25-unicom</guid>
+            </item>
+        
+            <item>
+                <title>(转)微不足道的坚持</title>
+                <description>&lt;p&gt;本文转自&lt;a href=&quot;https://github.com/lifesinger/blog/issues/198?achuan.io&quot;&gt;玉伯的博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在你最擅长的专业领域内，可曾有过一件让你骄傲，持续坚持下来的事情？每当别人谈论它时，你总是偷偷窃喜？&lt;/p&gt;
+
+&lt;p&gt;我曾经这样勉励我的弟兄们，在满负荷的工作压力面前，总要找到一件有意义、自己感兴趣且擅长的事情，坚持做，是一种解压，更是为了让自己的专业所长，找到有意义的落脚点。分享三件事情，大家共勉&lt;/p&gt;
+
+&lt;h3 id=&quot;第一件事&quot;&gt;第一件事：&lt;/h3&gt;
+&lt;p&gt;两前年，流火曾经找我聊想搭建一个行业内前端社区，他有清爽的界面，有优雅的交互体验，我当时并不看好，担心接下来的工作压力会让人抗不住，两年过去了，在百度搜索f2e可以在显要位置看到这个极简的域名”&lt;a href=&quot;http://f2e.im?achuan.io&quot;&gt;f2e.im&lt;/a&gt;“。社区雏形完整，代码完全开源，我也很幸运成为F2E社区&lt;a href=&quot;http://f2e.im/u/jayli?achuan.io&quot;&gt;第三号成员&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;我当然听到过太多质疑的声音，诸如”这东东和某东东很类似？”，或者”这里菜鸟太多了，没有我想要的高手？”云云。&lt;/p&gt;
+
+&lt;p&gt;Whatever!~&lt;/p&gt;
+
+&lt;p&gt;评论终将归于浮云，留下的是两年的坚持，以及它换来的微不足道的满足感！同样，当流火在解决了成百上千个无关紧要又繁琐冗碎的bugfix时，换来了对python的精通，对代码版本迭代的专业性把握，对网络协议和内容渲染模式的深刻理解，收获了直面一线用户的宝贵经验，更重要的是，懂得坚持的意义。这些硬技能直接促成了今天流火在业务上的钻研与精通。&lt;/p&gt;
+
+&lt;h3 id=&quot;第二件事&quot;&gt;第二件事：&lt;/h3&gt;
+&lt;p&gt;前年年底，我们团队发起了针对校招同学的”魔鬼训练营”，宗旨是艰苦一年，主动成长，我们无条件的侵占了大家的加班、午餐、晚餐、甚至周末时间。工作的紧张压力下，还要准备给大家反讲，质量良心保证，精力严重透支，要不是靠着年轻的身子板，扛下来简直是个奇迹。&lt;/p&gt;
+
+&lt;p&gt;迟伤、影逸、夕剑 全程坚持了下来。&lt;/p&gt;
+
+&lt;p&gt;当年反讲的JavaScript设计模式、熟读W3C标准、NodeJS、Git、字符编码、HTTP协议这些基础知识，让充电加速。现在当面对业务压力和未知bug时，他们显然更勇于去透过表面看本质。并在 WebRocket（@影逸）、机票YUI体系的KISSY化（@迟伤）等项目中淋漓紧致的体现出自身专业水平。毕业一年，无压力的开始挑大梁了。&lt;/p&gt;
+
+&lt;p&gt;回想起来，魔鬼训练营中辛苦的坚持，是如此微不足道。&lt;/p&gt;
+
+&lt;h3 id=&quot;第三件事&quot;&gt;第三件事：&lt;/h3&gt;
+&lt;p&gt;两年前，我作为PM落地了一件看似不可能完成的任务，&lt;a href=&quot;http://ued.taobao.com/javascript?achuan.io&quot;&gt;JavaScript权威指南（第六版）&lt;/a&gt;的翻译。认领这个任务的初衷仅仅是想挑战下自己的能力极限，看清楚自己几斤几两，没想到一做就是一年。&lt;/p&gt;
+
+&lt;p&gt;这段时间在工作和业余时间谨慎的保持平衡，压力面前各种放弃的冲动仍历历在目，但仍抵不过这本书上市之时的那股满足感。&lt;/p&gt;
+
+&lt;p&gt;过程中听到太多质疑的声音，WhatEver，你所掌握关于JavaScript的一切，始终是我的子集。纯技能上的收获更是大大的丰厚。&lt;/p&gt;
+
+&lt;h3 id=&quot;结语&quot;&gt;结语&lt;/h3&gt;
+&lt;p&gt;任何一件事情，有多大投入，就有多大收获。当你还是局内人时，不清楚傻傻的坚持的意义，这时内心的纠结最容易让人动摇和放弃。但事成之日，才会真正拨云见月，一树百获。这时，压力是浮云，纠结是浮云，抱怨是浮云，斤斤计较更是浮云。“坚持到胜利”，是如此言轻，又是如此言重。&lt;/p&gt;
+
+&lt;p&gt;在你最擅长的领域内，可曾有过让你骄傲，持续坚持下来的事情？每当别人谈论它时，你总是偷偷窃喜？那么。。。&lt;/p&gt;
+</description>
+                <pubDate>Sat, 23 Feb 2019 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2019-02-23-insist</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2019-02-23-insist</guid>
+            </item>
+        
+            <item>
+                <title>2018小总结</title>
+                <description>&lt;p&gt; 岁月不居,时节如流。现在距离2019年还有5分钟,想一想年后…我的求学生涯也该结束了…挺难受的,不过收获还是一箩筐的!那些不该经历和不可能经历的事情都让我走了一遭…&lt;/p&gt;
+
+&lt;h2 id=&quot;关于生活方面&quot;&gt;关于生活方面&lt;/h2&gt;
+&lt;p&gt; 我比以前更耐草了,适应力极强,耳麦脑袋挂,手掌键盘放,能折腾两宿…不过让我比较高兴的是近一年我把常期的网瘾给戒掉了,这玩意真是让我投入了太多精力,现在想一想当初的我简直就是在犯罪！不过偶尔放松心情,缓解压力还是不错的。不过今年我失眠比较难受,希望明年让我睡的早一些…&lt;/p&gt;
+
+&lt;h2 id=&quot;关于实践学习&quot;&gt;关于实践学习&lt;/h2&gt;
+&lt;p&gt; 今年最让我扯淡的就是做一个Linux硬盘分区方案,明明很简单操作,我给大意了,后果导致我进几年来做的所有东西几乎都没了……编程方面学习的压力也挺大,可能是我脑子不太转圈…还有就是各种兼职,这个东西其实挺有意思的,时不时的周末兼职也让我学会很多东西。让我一个小白活生生的被迫成了老油条……&lt;/p&gt;
+
+&lt;h2 id=&quot;关于职业规划&quot;&gt;关于职业规划&lt;/h2&gt;
+&lt;p&gt; 早就已经确定方向,回想小时候想把爱好当成工作,别提多开心,现在想一想我抬手就是给自己一巴掌,不！你不想！&lt;/p&gt;
+
+&lt;p&gt;好了,今天的熬夜点到为止, 2019 新的一年,祝大家乘风破浪！晚安。
+&lt;img src=&quot;/assets/article/2018-12-31-2018/bainian.png?achuan.io&quot; alt=&quot;Alt text&quot; title=&quot;不知道说什么,给大家拜个早年吧!&quot; /&gt;&lt;/p&gt;
+</description>
+                <pubDate>Mon, 31 Dec 2018 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2018-12-31-2018</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2018-12-31-2018</guid>
+            </item>
+        
+            <item>
+                <title>cmd笔记(长期更新)</title>
+                <description>&lt;p&gt;最近从 linux 换到 windows 真是一言难尽下次发表磁盘阵列的时候再说这个事吧…&lt;br /&gt;
+转到windows后安装mysql,又想起linux的终端了,但是windows没这玩意,cmd凑合一下吧,再温习一下cmd的一些命令…&lt;/p&gt;
+
+&lt;h2 id=&quot;查看&quot;&gt;查看&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 查看本地ip&lt;/span&gt;
+ipconfig
+&lt;span class=&quot;c&quot;&gt;# 检查Windows版本&lt;/span&gt;
+winver
+&lt;span class=&quot;c&quot;&gt;# 查看默认用户&lt;/span&gt;
+net user
+&lt;span class=&quot;c&quot;&gt;# 查看用户组&lt;/span&gt;
+net localgroup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;复粘删拷&quot;&gt;复粘删拷&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 复制文件&lt;/span&gt;
+copy
+&lt;span class=&quot;c&quot;&gt;# 移动文件&lt;/span&gt;
+move
+&lt;span class=&quot;c&quot;&gt;# 删除文件&lt;/span&gt;
+del
+&lt;span class=&quot;c&quot;&gt;# 拷贝文件&lt;/span&gt;
+xcopy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;创建文件与属性权限&quot;&gt;创建文件与属性权限&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 创建文件&lt;/span&gt;
+copy
+&lt;span class=&quot;c&quot;&gt;# 创建共享文件夹&lt;/span&gt;
+shrpubw
+
+&lt;span class=&quot;c&quot;&gt;# 属性权限&lt;/span&gt;
+attrib
+    +r &lt;span class=&quot;c&quot;&gt;# 只读&lt;/span&gt;
+    +h &lt;span class=&quot;c&quot;&gt;# 隐藏&lt;/span&gt;
+    +a &lt;span class=&quot;c&quot;&gt;# 存档&lt;/span&gt;
+    +s &lt;span class=&quot;c&quot;&gt;# 系统&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;重关注销&quot;&gt;重关注销&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;shutdown
+    &lt;span class=&quot;c&quot;&gt;# 关机&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# 取消事件&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# 重启&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# 注销当前用户&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# [20] 定时设置默认值是20秒&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;网络安全&quot;&gt;网络安全&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 显示网络连接\路由表和网络接口信息&lt;/span&gt;
+netstat - 
+    netstat &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;选项]
+        &lt;span class=&quot;c&quot;&gt;# 显示所有socket,包括正在的监听的&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 每个一秒就重新显示一遍,直到用户中断它&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示每个协议统计信息&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示以太网统计信息,此选项可以与 -s 结合&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示当前连接卸载状态&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示 NetworkDirect 连接、侦听器和共享&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-x&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示所有连接的TCP连接模板&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# 显示正在进行的工作&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 查看80端口占用情况&lt;/span&gt;
+netstat &lt;span class=&quot;nt&quot;&gt;-aon&lt;/span&gt;|findstr &lt;span class=&quot;s1&quot;&gt;'80'&lt;/span&gt;
+    TCP  0.0.0.0:80  0.0.0.0:0  LISTENING  6436
+&lt;span class=&quot;c&quot;&gt;# 查找PID对应的进程&lt;/span&gt;
+tasklist|findstr &lt;span class=&quot;s1&quot;&gt;'6436'&lt;/span&gt;
+    httpd.exe  6436 Services  0  12,040 K
+&lt;span class=&quot;c&quot;&gt;# 结束名为 httpd.exe 的进程&lt;/span&gt;
+taskkill /f /t im httpd.exe  
+
+&lt;span class=&quot;c&quot;&gt;# 打开控制台&lt;/span&gt;
+mmc
+&lt;span class=&quot;c&quot;&gt;# DNS测试&lt;/span&gt;
+ping &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 注册表&lt;/span&gt;
+regedit.exe
+&lt;span class=&quot;c&quot;&gt;# 事件查看器&lt;/span&gt;
+eventvwr
+&lt;span class=&quot;c&quot;&gt;# 查看本地ip&lt;/span&gt;
+ipconfig
+&lt;span class=&quot;c&quot;&gt;# 任务管理器&lt;/span&gt;
+taskmgr
+&lt;span class=&quot;c&quot;&gt;# 系统组件服务&lt;/span&gt;
+dcomcnfg
+&lt;span class=&quot;c&quot;&gt;# 系统配置&lt;/span&gt;
+msconfig.exe
+&lt;span class=&quot;c&quot;&gt;# 设备管理器&lt;/span&gt;
+devmgmt.msc
+&lt;span class=&quot;c&quot;&gt;# 计算机管理&lt;/span&gt;
+compmgmt.msc
+&lt;span class=&quot;c&quot;&gt;# 本地服务设置&lt;/span&gt;
+services.msc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;系统维护&quot;&gt;系统维护&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 检查DirectX信息&lt;/span&gt;
+dxdiag
+&lt;span class=&quot;c&quot;&gt;# 垃圾整理&lt;/span&gt;
+cleanmgr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;功能&quot;&gt;功能&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 清除屏幕&lt;/span&gt;
+cls
+&lt;span class=&quot;c&quot;&gt;# 放大镜&lt;/span&gt;
+magnify
+&lt;span class=&quot;c&quot;&gt;# 启动计算器&lt;/span&gt;
+calc
+&lt;span class=&quot;c&quot;&gt;# 控制面板&lt;/span&gt;
+control
+&lt;span class=&quot;c&quot;&gt;# 鼠标属性&lt;/span&gt;
+main.cpl
+&lt;span class=&quot;c&quot;&gt;# 打开记事本&lt;/span&gt;
+notepad
+&lt;span class=&quot;c&quot;&gt;# 游戏控制器&lt;/span&gt;
+joy.cpl
+&lt;span class=&quot;c&quot;&gt;# 屏幕分辨率&lt;/span&gt;
+desk.cpl
+&lt;span class=&quot;c&quot;&gt;# 程序和功能&lt;/span&gt;
+appwiz.cpl
+&lt;span class=&quot;c&quot;&gt;# 打开资源管理器&lt;/span&gt;
+explorer
+&lt;span class=&quot;c&quot;&gt;# 共享文件夹管理器&lt;/span&gt;
+fsmgmt.msc
+&lt;span class=&quot;c&quot;&gt;# 木马捆绑工具，系统自带&lt;/span&gt;
+iexpress
+&lt;span class=&quot;c&quot;&gt;# 配置显示器和打印机中的色彩&lt;/span&gt;
+colorcpl
+&lt;span class=&quot;c&quot;&gt;# 远程桌面连接&lt;/span&gt;
+mstsc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2019-06-03-更新&quot;&gt;2019-06-03 更新&lt;/h2&gt;
+&lt;h3 id=&quot;tskill&quot;&gt;tskill&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## 重启资源管理器&lt;/span&gt;
+tskill explorer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+                <pubDate>Thu, 20 Dec 2018 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2018-12-20-cmd</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2018-12-20-cmd</guid>
+            </item>
+        
+            <item>
+                <title>php笔记(长期更新)</title>
+                <description>&lt;h2 id=&quot;预定义变量&quot;&gt;预定义变量&lt;/h2&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 当前脚本所在的文档根目录(服务器VirtualHost定义)&lt;/span&gt;
+DOCUMENBT_ROOT
+&lt;span class=&quot;c&quot;&gt;# 获取当前域名&lt;/span&gt;
+HTTP_HOST
+&lt;span class=&quot;c&quot;&gt;# 获取当前页面地址 &lt;/span&gt;
+PHP_SELF
+&lt;span class=&quot;c&quot;&gt;# 获取完整url(包括?号后的参数)&lt;/span&gt;
+REQUEST_URL
+&lt;span class=&quot;c&quot;&gt;# 获得页面使用的请求方法&lt;/span&gt;
+REQUEST_METHOD
+&lt;span class=&quot;c&quot;&gt;# 当前php文件名&lt;/span&gt;
+_FILE_
+&lt;span class=&quot;c&quot;&gt;# 当前php文件中所在的行数&lt;/span&gt;
+_LINE_
+&lt;span class=&quot;c&quot;&gt;# PHP版本&lt;/span&gt;
+PHP_VERSION
+&lt;span class=&quot;c&quot;&gt;# 获得地址后的所有内容&lt;/span&gt;
+REQUEST_URI
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;字符串函数&quot;&gt;字符串函数&lt;/h2&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 输出一个或多个字符串&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 去除字符串首尾处的空白字符（或者其他字符）&lt;/span&gt;
+trim
+&lt;span class=&quot;c&quot;&gt;# 将一个字符串进行MD5算法加密&lt;/span&gt;
+md5
+&lt;span class=&quot;c&quot;&gt;# 将一个一维数组的值转化为字符串&lt;/span&gt;
+implode
+&lt;span class=&quot;c&quot;&gt;# 使用一个字符串分割另一个字符串&lt;/span&gt;
+explode
+&lt;span class=&quot;c&quot;&gt;# 将字符串解析成多.个变量&lt;/span&gt;
+parse_str
+&lt;span class=&quot;c&quot;&gt;# 使用另一个字符串填充字符串为指定长度&lt;/span&gt;
+str_pad
+&lt;span class=&quot;c&quot;&gt;# 重复一个字符串&lt;/span&gt;
+str_repeat
+&lt;span class=&quot;c&quot;&gt;# 子字符串替换&lt;/span&gt;
+str_replace
+&lt;span class=&quot;c&quot;&gt;# 随机打乱一个字符串&lt;/span&gt;
+str_shuffle
+&lt;span class=&quot;c&quot;&gt;# 将字符串转换为数组&lt;/span&gt;
+str_split
+&lt;span class=&quot;c&quot;&gt;# 获取字符串长度&lt;/span&gt;
+strlen
+&lt;span class=&quot;c&quot;&gt;# 从字符串中去除 HTML 和 PHP 标记&lt;/span&gt;
+strip_tags
+&lt;span class=&quot;c&quot;&gt;# 查找字符串首次出现的位置&lt;/span&gt;
+strpos
+&lt;span class=&quot;c&quot;&gt;# 查找指定字符在字符串中的最后一次出现&lt;/span&gt;
+strrchr
+&lt;span class=&quot;c&quot;&gt;# 计算指定字符串在目标字符串中最后一次出现的位置&lt;/span&gt;
+strrpos
+&lt;span class=&quot;c&quot;&gt;# 返回字符串的子串&lt;/span&gt;
+substr
+&lt;span class=&quot;c&quot;&gt;# 将字符串转化为小写&lt;/span&gt;
+strtolower
+&lt;span class=&quot;c&quot;&gt;# 将字符串转化为大写&lt;/span&gt;
+strtoupper
+&lt;span class=&quot;c&quot;&gt;# 反转字符串&lt;/span&gt;
+strrev
+&lt;span class=&quot;c&quot;&gt;# 指定文件进行MD5算法加密&lt;/span&gt;
+md5_file
+&lt;span class=&quot;c&quot;&gt;# 计算字符串的 sha1 散列值&lt;/span&gt;
+sha1
+&lt;span class=&quot;c&quot;&gt;# 以千位分隔符方式格式化一个数字&lt;/span&gt;
+number_format
+&lt;span class=&quot;c&quot;&gt;# 输出字符串&lt;/span&gt;
+print
+&lt;span class=&quot;c&quot;&gt;# 输出格式化字符串&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;数组函数&quot;&gt;数组函数&lt;/h2&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 新建一个数组&lt;/span&gt;
+array
+&lt;span class=&quot;c&quot;&gt;# 返回数组中所有的值&lt;/span&gt;
+array_values
+&lt;span class=&quot;c&quot;&gt;# 计算数组中的单元数目或对象中的属性个数&lt;/span&gt;
+count
+&lt;span class=&quot;c&quot;&gt;# 检查数组中是否存在某个值&lt;/span&gt;
+in_array
+&lt;span class=&quot;c&quot;&gt;# 将数组打乱&lt;/span&gt;
+shuffle
+&lt;span class=&quot;c&quot;&gt;# 将数组的内部指针指向第一个单元&lt;/span&gt;
+reset
+&lt;span class=&quot;c&quot;&gt;# 将数组的内部指针指向最后一个单元&lt;/span&gt;
+end
+&lt;span class=&quot;c&quot;&gt;# 将一个数组分割成多个&lt;/span&gt;
+array_chunk
+&lt;span class=&quot;c&quot;&gt;# 返回数组中指定的一列&lt;/span&gt;
+array_column
+&lt;span class=&quot;c&quot;&gt;# 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值&lt;/span&gt;
+array_combine
+&lt;span class=&quot;c&quot;&gt;# 统计数组中所有的值出现的次数&lt;/span&gt;
+array_count_values
+&lt;span class=&quot;c&quot;&gt;# 用给定的值填充数组&lt;/span&gt;
+array_fill
+&lt;span class=&quot;c&quot;&gt;# 交换数组中的键和值&lt;/span&gt;
+array_flip
+&lt;span class=&quot;c&quot;&gt;# 检查给定的键名或索引是否存在于数组中&lt;/span&gt;
+array_key_exists
+&lt;span class=&quot;c&quot;&gt;# 返回数组中部分的或所有的键名&lt;/span&gt;
+array_keys
+&lt;span class=&quot;c&quot;&gt;# 合并一个或多个数组&lt;/span&gt;
+array_merge
+&lt;span class=&quot;c&quot;&gt;# 用值将数组填补到指定长度&lt;/span&gt;
+array_pad
+&lt;span class=&quot;c&quot;&gt;# 将数组最后一个单元弹出（出栈）&lt;/span&gt;
+array_pop
+&lt;span class=&quot;c&quot;&gt;# 从数组中随机取出一个或多个单元&lt;/span&gt;
+array_rand
+&lt;span class=&quot;c&quot;&gt;# 返回一个单元顺序相反的数组&lt;/span&gt;
+array_reverse
+&lt;span class=&quot;c&quot;&gt;# 在数组中搜索给定的值，如果成功则返回相应的键名&lt;/span&gt;
+array_search
+&lt;span class=&quot;c&quot;&gt;# 将数组开头的单元移出数组&lt;/span&gt;
+array_shift
+&lt;span class=&quot;c&quot;&gt;# 从数组中取出一段&lt;/span&gt;
+array_slice
+&lt;span class=&quot;c&quot;&gt;# 在数组开头插入一个或多个单元&lt;/span&gt;
+array_unshift
+&lt;span class=&quot;c&quot;&gt;# 对数组进行逆向排序并保持索引关系&lt;/span&gt;
+arsort
+&lt;span class=&quot;c&quot;&gt;# 对数组进行排序并保持索引关系&lt;/span&gt;
+asort
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;get-与-post-的区别&quot;&gt;GET 与 POST 的区别&lt;/h2&gt;
+&lt;p&gt;GET在浏览器回退时是无害的，而POST会再次提交请求&lt;br /&gt;
+GET产生的URL地址可以被Bookmark，而POST不可以&lt;br /&gt;
+GET请求会被浏览器主动cache，而POST不会，除非手动设置&lt;br /&gt;
+GET请求只能进行url编码，而POST支持多种编码方式&lt;br /&gt;
+GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留&lt;br /&gt;
+GET请求在URL中传送的参数是有长度限制的，而POST么有&lt;br /&gt;
+对参数的数据类型，GET只接受ASCII字符，而POST没有限制&lt;br /&gt;
+GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息&lt;br /&gt;
+GET参数通过URL传递，POST放在Request body中&lt;br /&gt;&lt;/p&gt;
+</description>
+                <pubDate>Fri, 14 Dec 2018 00:00:00 +0800</pubDate>
+                <link>http://0.0.0.0:4000/2018-12-14-php-notes</link>
+                <guid isPermaLink="true">http://0.0.0.0:4000/2018-12-14-php-notes</guid>
+            </item>
+        
+    </channel>
+</rss>

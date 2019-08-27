@@ -1,0 +1,67 @@
+# Site settings
+title: 阿川的个人博客
+email: achuan@achuan.io
+
+# 阿川的个人博客
+description: "阿川的个人博客"
+
+# the subpath of your site, e.g. /blog/
+baseurl: "https://3-jekyll.bioinit.com"
+
+# the base hostname & protocol for your site
+url: "https://3-jekyll.bioinit.com"
+
+# Build settings
+# 语法高亮
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# relative_permalinks:true
+# 博文的链接样式
+permalink: /:year-:month-:day-:title
+
+# 博客作者相关
+author:
+  name: Hong-hai zhang
+  email: achuan@achuan.io
+  Qzone: https://user.qzone.qq.com/2434929041
+  github: https://github.com/achuanya
+  github_username: achuanya
+  github_repositories: https://github.com/achuanya/achuanya.github.io
+  github_subscription: https://github.com/achuanya/achuanya.github.io/subscription
+
+locals:
+  tags: 标签
+  about: 关于
+  active: 技术
+
+# 资源
+favicon: /assets/images/favicon.ico
+avatar: /assets/images/avatar.jpg
+css: /assets/css/
+js: /assets/js/
+font: /assets/font/
+images: /assets/images/
+article: /assets/article/
+pages: /pages/
+
+# 页面
+404: /pages/404.html
+ie: /pages/ie.xml
+# RSS
+rss: /pages/rss.xml
+# 网站地图
+test: /pages/test.html
+# 归档
+archive: /pages/archive.html
+# 链接
+blogroll: /pages/blogroll.html
+# 留言
+message: /pages/message.html
+
+# Disqus设置
+disqus: 
+id: 阿川

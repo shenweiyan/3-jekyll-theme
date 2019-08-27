@@ -1,0 +1,51 @@
+<p><a name="p9gDE"></a></p>
+<h2 id="flexslider">FlexSlider</h2>
+
+<p>链接：<a href="http://flexslider.woothemes.com/">http://flexslider.woothemes.com/</a></p>
+
+<p><strong>FlexSlider </strong>是一个非常出色的 jQuery 滑动切换插件，它支持所有主流浏览器，并有淡入淡出效果。适合所有初级和高级网页设计师使用。关键的一点是该工具还是开源的。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">load</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+ <span class="nx">$</span><span class="p">(</span><span class="s1">'.flexslider'</span><span class="p">).</span><span class="nx">flexslider</span><span class="p">({</span>
+  <span class="na">animation</span><span class="p">:</span> <span class="s2">"fade"</span><span class="p">,</span>              <span class="c1">//String: Select your animation type, "fade" or "slide"图片变换方式：淡入淡出或者滑动</span>
+  <span class="na">slideDirection</span><span class="p">:</span> <span class="s2">"horizontal"</span><span class="p">,</span>   <span class="c1">//String: Select the sliding direction, "horizontal" or "vertical"图片设置为滑动式时的滑动方向：左右或者上下</span>
+  <span class="na">slideshow</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>                <span class="c1">//Boolean: Animate slider automatically 载入页面时，是否自动播放</span>
+  <span class="na">slideshowSpeed</span><span class="p">:</span> <span class="mi">7000</span><span class="p">,</span>           <span class="c1">//Integer: Set the speed of the slideshow cycling, in milliseconds 自动播放速度毫秒</span>
+  <span class="na">animationDuration</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>         <span class="c1">//Integer: Set the speed of animations, in milliseconds动画淡入淡出效果延时</span>
+  <span class="na">directionNav</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>             <span class="c1">//Boolean: Create navigation for previous/next navigation? (true/false)是否显示左右控制按钮</span>
+  <span class="na">controlNav</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>               <span class="c1">//Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage是否显示控制菜单</span>
+  <span class="na">keyboardNav</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>              <span class="c1">//Boolean: Allow slider navigating via keyboard left/right keys键盘左右方向键控制图片滑动</span>
+  <span class="na">mousewheel</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>              <span class="c1">//Boolean: Allow slider navigating via mousewheel鼠标滚轮控制制图片滑动</span>
+  <span class="na">prevText</span><span class="p">:</span> <span class="s2">"Previous"</span><span class="p">,</span>           <span class="c1">//String: Set the text for the "previous" directionNav item</span>
+  <span class="na">nextText</span><span class="p">:</span> <span class="s2">"Next"</span><span class="p">,</span>               <span class="c1">//String: Set the text for the "next" directionNav item</span>
+  <span class="na">pausePlay</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>               <span class="c1">//Boolean: Create pause/play dynamic element</span>
+  <span class="na">pauseText</span><span class="p">:</span> <span class="s1">'Pause'</span><span class="p">,</span>             <span class="c1">//String: Set the text for the "pause" pausePlay item</span>
+  <span class="na">playText</span><span class="p">:</span> <span class="s1">'Play'</span><span class="p">,</span>               <span class="c1">//String: Set the text for the "play" pausePlay item</span>
+  <span class="na">randomize</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>               <span class="c1">//Boolean: Randomize slide order 是否随机幻灯片</span>
+  <span class="na">slideToStart</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>                <span class="c1">//Integer: The slide that the slider should start on. Array notation (0 = first slide)初始化第一次显示图片位置</span>
+  <span class="na">animationLoop</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>            <span class="c1">//Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end 是否循环滚动</span>
+  <span class="na">pauseOnAction</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>            <span class="c1">//Boolean: Pause the slideshow when interacting with control elements, highly recommended.</span>
+  <span class="na">pauseOnHover</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>            <span class="c1">//Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering</span>
+  <span class="na">controlsContainer</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>          <span class="c1">//Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.</span>
+  <span class="na">manualControls</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>             <span class="c1">//Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.自定义控制导航</span>
+  <span class="na">manualControlEvent</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span>          <span class="c1">//String:自定义导航控制触发事件:默认是click,可以设定hover</span>
+  <span class="na">start</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){},</span>            <span class="c1">//Callback: function(slider) - Fires when the slider loads the first slide</span>
+  <span class="na">before</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){},</span>           <span class="c1">//Callback: function(slider) - Fires asynchronously with each slider animation</span>
+  <span class="na">after</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){},</span>            <span class="c1">//Callback: function(slider) - Fires after each slider animation completes</span>
+  <span class="na">end</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){}</span>               <span class="c1">//Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)</span>
+   
+ <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>FAQ01</strong>：<a href="http://cn.voidcc.com/question/p-pumryoaf-hm.html">如何使用flexslider设置多个滑块？</a></p>
+
+<p><a name="zWSq9"></a></p>
+<h2 id="raxus-slider">Raxus Slider</h2>
+
+<p>链接：<a href="https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343">https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343</a></p>
+
+<p>相比 FlexSlider，也有人会选择使用 Raxus Slider，从代码简洁性上而言，后者能用更少的代码实现同样的效果；不同的是，FlexSlider 是开源免费的，而 Raxus Slider是付费的。</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565168362478-c1dbae85-6549-4266-85af-8af5c136afba.png#align=left&amp;display=inline&amp;height=468&amp;name=image.png&amp;originHeight=468&amp;originWidth=1024&amp;size=190757&amp;status=done&amp;width=1024" alt="image.png" /></p>
+

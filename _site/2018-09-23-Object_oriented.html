@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=/pages/ie.xml"><![endif]-->
+
+<title>面向对象(Object Oriented)学习笔记(一)</title>
+<meta name="baidu-site-verification" content="rV13eEAUHL" />
+<meta name="title" content="面向对象(Object Oriented)学习笔记(一)">
+
+  <meta name="author" content="Hong-hai zhang">
+
+<meta name="keywords" content="">
+
+  <meta name="description" content="面向对象(Object Oriented)学习笔记(一)">
+
+
+<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="https://cdn.staticfile.org/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  // 防止页面 url 更改
+  var url = decodeURI(window.location);
+  url = url.split('?')[0];
+  window.history.pushState({}, 0, url);
+
+  var _hmt = _hmt || [];
+  (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a5e3a9f3394bf75c254e794603f83613";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.custom.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/iDisqus.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mobile.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/highlight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Source+Code+Pro">
+
+<link href="/pages/rss.xml" rel="alternate" title="阿川的个人博客" type="application/atom+xml">
+
+  </head>
+  <body>
+    <button id="js-fullscreen">
+      <span id="icon-arrow" class="fontello"></span>
+    </button>
+    <button id="scroll-top">
+      <span id="icon-arrow-up" class="fontello"></span>
+    </button>
+    <aside id="sidebar">
+  <nav id="tags">
+    <!--头像-->
+    <a href="/" id="avatar">
+      <img src="/assets/images/avatar.jpg" alt="">
+    </a>
+
+    <!--栏目分类-->
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags-btn active">全部</li>
+      
+        <li id="技术" class="tags__li tags-btn">技术</li>
+      
+        <li id="生活" class="tags__li tags-btn">生活</li>
+      
+        <li id="摄影" class="tags__li tags-btn">摄影</li>
+      
+        <li id="开发" class="tags__li tags-btn">开发</li>
+      
+      <a href="/pages/archive.html">
+        <li class="tags__li tags-btn blogroll">归档</li>
+      </a>
+      <a href="/pages/blogroll.html">
+        <li class="tags__li tags-btn blogroll">链接</li>
+      </a>
+      <a href="/pages/message.html">
+        <li class="tags__li tags-btn blogroll">留言</li>
+      </a>
+    </ul>
+
+    <!--Github - Rss - 邮箱-->
+    <div id="tags__bottom">
+      <a href="https://github.com/achuanya" id="icon-github" class="tags-btn fontello" target="_blank"></a>
+      <a href="/pages/rss.xml" id="icon-feed" class="tags-btn fontello" target="_blank"></a>
+      <a href="mailto:achuan@achuan.io" id="icon-email" class="tags-btn fontello"></a>
+    </div>
+  </nav>
+
+  <!--搜索-->
+  <div id="posts-list">
+    <form action="" id="search-form">
+      <a href="/" id="mobile-avatar" style="background-image:url(/assets/images/avatar.jpg)"></a>
+      <input id="search-input" type="text" placeholder="站内搜索..." >
+    </form>
+
+    <!--文章列表-->
+    <nav id="pl__container">
+    
+      <a class="生活 pl__all" href="/2019-08-25-tech-What-happened">
+        <span class="pl__circle"></span>
+        <span class="pl__title">说说消失这二十多天发生的事情</span>
+        <span class="pl__date">2019-08-25</span>
+      </a>
+    
+      <a class="开发 pl__all" href="/2019-08-07-flex-slider-and-raxus-slider">
+        <span class="pl__circle"></span>
+        <span class="pl__title">FlexSlider 和 RaxusSlider 插件相关参数</span>
+        <span class="pl__date">2019-08-07</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-05-19-tech-whiz">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)我眼中的技术高手</span>
+        <span class="pl__date">2019-05-19</span>
+      </a>
+    
+      <a class="摄影 pl__all" href="/2019-04-20-One-Single-Lens">
+        <span class="pl__circle"></span>
+        <span class="pl__title">我的第一部单反相机</span>
+        <span class="pl__date">2019-04-20</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-03-26-thoughts">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2019-03-26 随笔</span>
+        <span class="pl__date">2019-03-26</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-25-unicom">
+        <span class="pl__circle"></span>
+        <span class="pl__title">电信用户投诉攻略</span>
+        <span class="pl__date">2019-02-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-23-insist">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)微不足道的坚持</span>
+        <span class="pl__date">2019-02-23</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-12-31-2018">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2018小总结</span>
+        <span class="pl__date">2018-12-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-20-cmd">
+        <span class="pl__circle"></span>
+        <span class="pl__title">cmd笔记(长期更新)</span>
+        <span class="pl__date">2018-12-20</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-14-php-notes">
+        <span class="pl__circle"></span>
+        <span class="pl__title">php笔记(长期更新)</span>
+        <span class="pl__date">2018-12-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-11-08-Ubuntu-Deployment">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu Server部署日记</span>
+        <span class="pl__date">2018-11-08</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-25-ubuntu-lock">
+        <span class="pl__circle"></span>
+        <span class="pl__title">解决ubuntu：E：无法获得锁(11：资源暂时不可用)</span>
+        <span class="pl__date">2018-10-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-24-theory-of-means">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)论胡编乱造的写作技巧</span>
+        <span class="pl__date">2018-10-24</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-21-domain-name">
+        <span class="pl__circle"></span>
+        <span class="pl__title">更换了域名、邮箱并修复了移动端bug</span>
+        <span class="pl__date">2018-10-21</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-14-git">
+        <span class="pl__circle"></span>
+        <span class="pl__title">开源分布式管理控制系统——Git笔记</span>
+        <span class="pl__date">2018-10-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-24-linux-command">
+        <span class="pl__circle"></span>
+        <span class="pl__title">linux命令笔记(长期更新)</span>
+        <span class="pl__date">2018-09-24</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-23-Object_oriented">
+        <span class="pl__circle"></span>
+        <span class="pl__title">面向对象(Object Oriented)学习笔记(一)</span>
+        <span class="pl__date">2018-09-23</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-03-Markdown">
+        <span class="pl__circle"></span>
+        <span class="pl__title">致简写作神器——Markdown</span>
+        <span class="pl__date">2018-09-03</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-08-31-Programmer-development">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)为什么你写不好一个快速排序? 谈程序员的职业发展</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-31-Learning-the-open-source">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)如何学习开源项目</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-30-Ubuntu-set-up-sublime">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu调教日记之Sublime Text3</span>
+        <span class="pl__date">2018-08-30</span>
+      </a>
+    
+    </nav>
+  </div>
+</aside>
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+    <h1 id="post__title" data-identifier="20180923">面向对象(Object Oriented)学习笔记(一)</h1>
+    <div id="post__date">2018-09-23</div>
+    <declare id="declare" class="declare">
+      <hr/> 本博客所有文章采用的授权方式为
+        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh?achuan.io">
+          自由转载-非商用-非衍生-保持署名
+        </a>
+      ，转载请务必注明出处，谢谢。
+      声明：<br />本博客欢迎转发，但请保留原作者信息!<br />
+      博客：<a href="">阿川的个人博客</a><br />
+      邮箱：<a href="mailto:achuan@achuan.io">achuan@achuan.io</a>
+      <br />内容系本人学习、研究和总结，如有雷同，实属荣幸！
+      <hr/>
+    </declare>
+    <h2 id="一-面向对象oop的发展历程">一. 面向对象(OOP)的发展历程</h2>
+<h3 id="1-oop的诞生">1. OOP的诞生</h3>
+<p><a href="https://zh.wikipedia.org/wiki/Simula?achuan.io"><strong>Simulaq</strong></a>面向对象技术最早是在编程语言Simual中提出，1967年2月20日，在挪威奥斯陆郊外的小镇莉沙布举行的IFIP TC-2 工作会议上，挪威科学家Ole-Johan Dahl和Kristen Nygaard正式发布了Simula 67语言。Simula 67，是面向对象的开山祖师，它引入了所有后来面向对象程序设计语言所遵循的基础概念：对象、类、继承，但它的实现并不是很完整。后来<a href="https://zh.wikipedia.org/wiki/Smalltalk?achuan.io"><strong>Smalltalk</strong></a>的诞生，第二个面向对象的程序语言的出现，而且是第一个完整实现了面向对象技术的语言，和第一个真正的集成开发环境(IED)。</p>
+
+<h2 id="二-面向对象oop的概念">二. 面向对象(OOP)的概念</h2>
+<p>OOP达到了软件工程的三个目标</p>
+<ul>
+  <li><strong>重用性</strong>、<strong>灵活性</strong>、<strong>扩展性</strong></li>
+</ul>
+
+<h2 id="三-oop三大特征">三. OOP三大特征</h2>
+
+<ul>
+  <li>封装(Encapsulation)：对外部不可见</li>
+  <li>继承(Inheritance)：扩展类的功能</li>
+  <li>多态(Polymorphism)：对象的重载、对象的多态性</li>
+</ul>
+
+<h2 id="四-类与对象">四. 类与对象</h2>
+
+<ul>
+  <li>类是对某一类事物的描述，是抽象的、概念上实际存在的该类事物的每个个体，因而也称实例(instance)，换种方法解释类就像一个具体的事物，一个对象，用编程代码来描述出来，</li>
+  <li>对象，简单的来说对象是可以使用的，而类只是对这件事物进行描述，它不能使用。</li>
+</ul>
+
+<h2 id="五-类与对象的关系">五. 类与对象的关系</h2>
+<p>这个我表达能力不太好哈…这样说吧，类就好比工厂车间的模具，而对象就是模具所产生的事物，一个模具是可以产生很多对象!
+也就是说对象是类的实例化<img src="/assets/article/2018-09-23-Object_oriented/comical.gif?achuan.io" alt="滑稽" title="滑稽" /></p>
+
+<h2 id="六-类的声明与对象的创建及使用">六. 类的声明与对象的创建及使用</h2>
+<p>好了我们来了解一下怎么找对象，…不..创建对象..</p>
+
+<h3 id="1-类的声明">1. 类的声明</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">类名称</span><span class="p">{</span>
+    <span class="c1">// 这里成员属性修饰还有好几种下次一次详解</span>
+    <span class="c1">// 声明成员变量(属性)</span>
+    <span class="nx">数据类型</span> <span class="nx">属性</span><span class="o">...</span>
+
+    <span class="c1">// public 表示公有</span>
+    <span class="k">public</span> <span class="nx">返回值的数据类型</span> <span class="nx">方法名称</span> <span class="p">(</span><span class="nx">参数1</span><span class="err">，</span><span class="nx">参数2</span><span class="p">){</span>  <span class="c1">// 定义方法</span>
+        <span class="c1">// 程序语句..</span>
+        <span class="c1">// return 等表达式</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2-对象的创建及使用">2. 对象的创建及使用:</h3>
+
+<p>// 实例化对象,有参数别忘了加括号!<br />
+<code class="highlighter-rouge">$定义对象名称 = new 类名([参数列表]);</code></p>
+
+<ul>
+  <li>对象中成员的访问:
+// 输出对象的属性<br />
+<code class="highlighter-rouge">$对象名 -&gt; 成员属性 = 赋值;</code></li>
+</ul>
+
+<p>// 调用对象的方法:<br />
+<code class="highlighter-rouge">$对象名 -&gt; 成员方法(参数);</code><br />
+// 成员属性中还分有静态属性, 它是不能实例化的,往后我会补充</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="cp">&lt;?php</span>
+        <span class="cm">/*---------------------------------*\
+            对象实例化
+            //实例化指OOP编程中，类创建对象的过程
+        \*---------------------------------*/</span>
+        <span class="k">class</span> <span class="nc">phone</span><span class="p">{</span>
+            <span class="c1"># 成员属性</span>
+            <span class="k">public</span> <span class="nv">$width</span><span class="p">;</span>
+            <span class="k">public</span> <span class="nv">$height</span><span class="p">;</span>
+            <span class="k">public</span> <span class="nv">$size</span><span class="p">;</span>
+
+            <span class="c1"># 成员方法</span>
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">call</span><span class="p">(</span><span class="nv">$name</span><span class="p">){</span>
+                <span class="k">echo</span> <span class="s2">"正在给</span><span class="si">{</span><span class="nv">$name</span><span class="si">}</span><span class="s2">打电话"</span><span class="p">;}</span>
+
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">message</span><span class="p">(</span><span class="nv">$name</span><span class="p">){</span>
+                <span class="k">echo</span> <span class="s2">"正在给</span><span class="si">{</span><span class="nv">$name</span><span class="si">}</span><span class="s2">发短信"</span><span class="p">;}</span>
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">play</span><span class="p">(){</span>
+                <span class="k">echo</span> <span class="s2">"正在玩游戏!"</span><span class="p">;}</span>
+
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">info</span><span class="p">(){</span>
+                <span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">play</span><span class="p">();</span>
+                <span class="k">return</span> <span class="s2">"&lt;br&gt; 手机的宽度；</span><span class="si">{</span><span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">width</span><span class="si">}</span><span class="s2">,&lt;br&gt; 手机的高度；</span><span class="si">{</span><span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">height</span><span class="si">}</span><span class="s2">"</span><span class="p">;}</span>
+        <span class="p">}</span>
+
+        <span class="c1"># 实例化对象</span>
+        <span class="nv">$phone</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">phone</span><span class="p">();</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">width</span> <span class="o">=</span> <span class="s2">"5CM"</span><span class="p">;</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">height</span> <span class="o">=</span> <span class="s2">"10CM"</span><span class="p">;</span>
+
+        <span class="c1">//$phone -&gt; width = "5CM"; //对象对成员属性的赋值(引用变量时 $ 符可以不写)</span>
+        <span class="c1">//echo $phone -&gt; width; //与对象取得成员属性存的值</span>
+        <span class="c1">//$phone1 = new phone();</span>
+        <span class="c1">//$phone1 -&gt; height = "10CM";</span>
+        <span class="c1">//$height = $phone1 -&gt; height;</span>
+        <span class="c1">//echo $height; </span>
+        <span class="c1">//echo $phone1 -&gt; height;</span>
+
+        <span class="c1">//$phone1 -&gt; aaaa = "AAAA";font</span>
+        <span class="c1">//var_dump("&lt;br&gt;",$phone1);</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">call</span><span class="p">(</span><span class="s2">"!list"</span><span class="p">);</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">call</span><span class="p">(</span><span class="s2">"&lt;br&gt; tom"</span><span class="p">);</span>
+        <span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">play</span><span class="p">();</span>
+        <span class="k">echo</span> <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">info</span><span class="p">();</span>
+
+        <span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>呼～ 第一章写完了，我也是近期刚学OOP，可能哪个方面写的并不是很好 嘿嘿，如有写的不足之处，还请您在下方留言<img src="/assets/article/2018-09-23-Object_oriented/fuels.gif?achuan.io" alt="Alt text" title="抱拳" />。</p>
+
+
+</article>
+
+<article id="post__content">
+    <h1 id="post__title" data-identifier="2018-09-23">面向对象(Object Oriented)学习笔记(一)</h1>
+
+    
+    <div id="article-meta">
+        <hr style="margin: 10px 0;"/>
+        <div class="post-meta">
+            <span>作者:
+            <author>Hong-hai zhang</author></span>
+            <span>类别:<a href="/404#">
+            <category></category></a></span>
+            <span>时间:
+            <time>2018-09-23</time></span>
+            <span>评分:
+            <score>10.0</score></span>
+        </div>
+    </div>
+    
+
+    <h2 id="一-面向对象oop的发展历程">一. 面向对象(OOP)的发展历程</h2>
+<h3 id="1-oop的诞生">1. OOP的诞生</h3>
+<p><a href="https://zh.wikipedia.org/wiki/Simula?achuan.io"><strong>Simulaq</strong></a>面向对象技术最早是在编程语言Simual中提出，1967年2月20日，在挪威奥斯陆郊外的小镇莉沙布举行的IFIP TC-2 工作会议上，挪威科学家Ole-Johan Dahl和Kristen Nygaard正式发布了Simula 67语言。Simula 67，是面向对象的开山祖师，它引入了所有后来面向对象程序设计语言所遵循的基础概念：对象、类、继承，但它的实现并不是很完整。后来<a href="https://zh.wikipedia.org/wiki/Smalltalk?achuan.io"><strong>Smalltalk</strong></a>的诞生，第二个面向对象的程序语言的出现，而且是第一个完整实现了面向对象技术的语言，和第一个真正的集成开发环境(IED)。</p>
+
+<h2 id="二-面向对象oop的概念">二. 面向对象(OOP)的概念</h2>
+<p>OOP达到了软件工程的三个目标</p>
+<ul>
+  <li><strong>重用性</strong>、<strong>灵活性</strong>、<strong>扩展性</strong></li>
+</ul>
+
+<h2 id="三-oop三大特征">三. OOP三大特征</h2>
+
+<ul>
+  <li>封装(Encapsulation)：对外部不可见</li>
+  <li>继承(Inheritance)：扩展类的功能</li>
+  <li>多态(Polymorphism)：对象的重载、对象的多态性</li>
+</ul>
+
+<h2 id="四-类与对象">四. 类与对象</h2>
+
+<ul>
+  <li>类是对某一类事物的描述，是抽象的、概念上实际存在的该类事物的每个个体，因而也称实例(instance)，换种方法解释类就像一个具体的事物，一个对象，用编程代码来描述出来，</li>
+  <li>对象，简单的来说对象是可以使用的，而类只是对这件事物进行描述，它不能使用。</li>
+</ul>
+
+<h2 id="五-类与对象的关系">五. 类与对象的关系</h2>
+<p>这个我表达能力不太好哈…这样说吧，类就好比工厂车间的模具，而对象就是模具所产生的事物，一个模具是可以产生很多对象!
+也就是说对象是类的实例化<img src="/assets/article/2018-09-23-Object_oriented/comical.gif?achuan.io" alt="滑稽" title="滑稽" /></p>
+
+<h2 id="六-类的声明与对象的创建及使用">六. 类的声明与对象的创建及使用</h2>
+<p>好了我们来了解一下怎么找对象，…不..创建对象..</p>
+
+<h3 id="1-类的声明">1. 类的声明</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">类名称</span><span class="p">{</span>
+    <span class="c1">// 这里成员属性修饰还有好几种下次一次详解</span>
+    <span class="c1">// 声明成员变量(属性)</span>
+    <span class="nx">数据类型</span> <span class="nx">属性</span><span class="o">...</span>
+
+    <span class="c1">// public 表示公有</span>
+    <span class="k">public</span> <span class="nx">返回值的数据类型</span> <span class="nx">方法名称</span> <span class="p">(</span><span class="nx">参数1</span><span class="err">，</span><span class="nx">参数2</span><span class="p">){</span>  <span class="c1">// 定义方法</span>
+        <span class="c1">// 程序语句..</span>
+        <span class="c1">// return 等表达式</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2-对象的创建及使用">2. 对象的创建及使用:</h3>
+
+<p>// 实例化对象,有参数别忘了加括号!<br />
+<code class="highlighter-rouge">$定义对象名称 = new 类名([参数列表]);</code></p>
+
+<ul>
+  <li>对象中成员的访问:
+// 输出对象的属性<br />
+<code class="highlighter-rouge">$对象名 -&gt; 成员属性 = 赋值;</code></li>
+</ul>
+
+<p>// 调用对象的方法:<br />
+<code class="highlighter-rouge">$对象名 -&gt; 成员方法(参数);</code><br />
+// 成员属性中还分有静态属性, 它是不能实例化的,往后我会补充</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="cp">&lt;?php</span>
+        <span class="cm">/*---------------------------------*\
+            对象实例化
+            //实例化指OOP编程中，类创建对象的过程
+        \*---------------------------------*/</span>
+        <span class="k">class</span> <span class="nc">phone</span><span class="p">{</span>
+            <span class="c1"># 成员属性</span>
+            <span class="k">public</span> <span class="nv">$width</span><span class="p">;</span>
+            <span class="k">public</span> <span class="nv">$height</span><span class="p">;</span>
+            <span class="k">public</span> <span class="nv">$size</span><span class="p">;</span>
+
+            <span class="c1"># 成员方法</span>
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">call</span><span class="p">(</span><span class="nv">$name</span><span class="p">){</span>
+                <span class="k">echo</span> <span class="s2">"正在给</span><span class="si">{</span><span class="nv">$name</span><span class="si">}</span><span class="s2">打电话"</span><span class="p">;}</span>
+
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">message</span><span class="p">(</span><span class="nv">$name</span><span class="p">){</span>
+                <span class="k">echo</span> <span class="s2">"正在给</span><span class="si">{</span><span class="nv">$name</span><span class="si">}</span><span class="s2">发短信"</span><span class="p">;}</span>
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">play</span><span class="p">(){</span>
+                <span class="k">echo</span> <span class="s2">"正在玩游戏!"</span><span class="p">;}</span>
+
+            <span class="k">public</span> <span class="k">function</span> <span class="nf">info</span><span class="p">(){</span>
+                <span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">play</span><span class="p">();</span>
+                <span class="k">return</span> <span class="s2">"&lt;br&gt; 手机的宽度；</span><span class="si">{</span><span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">width</span><span class="si">}</span><span class="s2">,&lt;br&gt; 手机的高度；</span><span class="si">{</span><span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">height</span><span class="si">}</span><span class="s2">"</span><span class="p">;}</span>
+        <span class="p">}</span>
+
+        <span class="c1"># 实例化对象</span>
+        <span class="nv">$phone</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">phone</span><span class="p">();</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">width</span> <span class="o">=</span> <span class="s2">"5CM"</span><span class="p">;</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">height</span> <span class="o">=</span> <span class="s2">"10CM"</span><span class="p">;</span>
+
+        <span class="c1">//$phone -&gt; width = "5CM"; //对象对成员属性的赋值(引用变量时 $ 符可以不写)</span>
+        <span class="c1">//echo $phone -&gt; width; //与对象取得成员属性存的值</span>
+        <span class="c1">//$phone1 = new phone();</span>
+        <span class="c1">//$phone1 -&gt; height = "10CM";</span>
+        <span class="c1">//$height = $phone1 -&gt; height;</span>
+        <span class="c1">//echo $height; </span>
+        <span class="c1">//echo $phone1 -&gt; height;</span>
+
+        <span class="c1">//$phone1 -&gt; aaaa = "AAAA";font</span>
+        <span class="c1">//var_dump("&lt;br&gt;",$phone1);</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">call</span><span class="p">(</span><span class="s2">"!list"</span><span class="p">);</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">call</span><span class="p">(</span><span class="s2">"&lt;br&gt; tom"</span><span class="p">);</span>
+        <span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+        <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">play</span><span class="p">();</span>
+        <span class="k">echo</span> <span class="nv">$phone</span> <span class="o">-&gt;</span> <span class="na">info</span><span class="p">();</span>
+
+        <span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>呼～ 第一章写完了，我也是近期刚学OOP，可能哪个方面写的并不是很好 嘿嘿，如有写的不足之处，还请您在下方留言<img src="/assets/article/2018-09-23-Object_oriented/fuels.gif?achuan.io" alt="Alt text" title="抱拳" />。</p>
+
+
+</article> <!-- end #post__content -->
+
+
+<!--<h2 id="post__discuss">文章赞赏</h2>-->
+<!--<img src="/assets/images/like.png" alt="赞赏码" class="image-center">-->
+
+<h2 id="post__discuss">文章评论</h2>
+<div id="comment"></div>
+
+<script>
+  $(document).ready(function(){
+      var disq = new iDisqus('comment', {
+        forum: 'https-achuan-io',
+        api: 'https://api.achuan.io/api/',
+        site: 'https://achuan.io',
+        mode: 2,
+        timeout: 3000,
+        init: true,
+      });
+  });
+</script>
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=achuan.io/2018-09-23-Object_oriented&title=面向对象(Object Oriented)学习笔记(一)&pics=/assets/images/avatar.jpg" target="_blank"></a>
+  <a id="icon-qzone" class="fontello" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=achuan.io/2018-09-23-Object_oriented&title=面向对象(Object Oriented)学习笔记(一)&pics=/assets/images/avatar.jpg" target="_blank"></a>
+  <p class="share-info">分享到</p>
+</div>
+
+
+        <p id="copyright">
+  © 2018 - 2019 
+  <a href="http://pages.github.com?achuan.io">Github Pages</a> & 
+  <a href="http://jekyllrb.com?achuan.io">Jekyll</a> & 
+  <a href="https://disqus.com?achuan.io">Disqus</a>
+</p>
+      </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">章节列表</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.staticfile.org/nprogress/0.1.2/nprogress.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.3/jquery.min.js"></script>
+<script src="/assets/js/jquery.pjax.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/iDisqus.min.js"></script>
+
+
+    <script>
+    var h0 = document.body.clientHeight;
+    var h1 = document.getElementById("avatar").offsetHeight;
+    var h2 = document.getElementById("tags__bottom").offsetHeight;
+    var h =  document.getElementById("tags__ul").scrollHeight;
+
+    var obj    = document.getElementById("tags__ul");
+    var items  = obj.getElementsByTagName("li");
+    var screen_h  = h0 - h1 - h2 - 89;
+    if (h > screen_h) {
+      obj.style.height = screen_h + "px";
+      //obj.style.paddingBottom = 15 + 'px';
+      obj.style.overflowY = "scroll";
+      obj.style.overflowX = "hidden";
+      items[0].style.borderTop = "none";
+    }
+    </script>
+
+   </body>
+ </html>

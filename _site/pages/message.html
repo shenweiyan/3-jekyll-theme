@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=/pages/ie.xml"><![endif]-->
+
+<title>留言</title>
+<meta name="baidu-site-verification" content="rV13eEAUHL" />
+<meta name="title" content="留言">
+
+  <meta name="author" content="Hong-hai zhang">
+
+<meta name="keywords" content="">
+
+
+<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="https://cdn.staticfile.org/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  // 防止页面 url 更改
+  var url = decodeURI(window.location);
+  url = url.split('?')[0];
+  window.history.pushState({}, 0, url);
+
+  var _hmt = _hmt || [];
+  (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a5e3a9f3394bf75c254e794603f83613";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.custom.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/iDisqus.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mobile.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/highlight.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.font.im/css?family=Source+Code+Pro">
+
+<link href="/pages/rss.xml" rel="alternate" title="阿川的个人博客" type="application/atom+xml">
+
+  </head>
+  <body>
+    <button id="js-fullscreen">
+      <span id="icon-arrow" class="fontello"></span>
+    </button>
+    <button id="scroll-top">
+      <span id="icon-arrow-up" class="fontello"></span>
+    </button>
+    <aside id="sidebar">
+  <nav id="tags">
+    <!--头像-->
+    <a href="/" id="avatar">
+      <img src="/assets/images/avatar.jpg" alt="">
+    </a>
+
+    <!--栏目分类-->
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags-btn active">全部</li>
+      
+        <li id="技术" class="tags__li tags-btn">技术</li>
+      
+        <li id="生活" class="tags__li tags-btn">生活</li>
+      
+        <li id="摄影" class="tags__li tags-btn">摄影</li>
+      
+        <li id="开发" class="tags__li tags-btn">开发</li>
+      
+      <a href="/pages/archive.html">
+        <li class="tags__li tags-btn blogroll">归档</li>
+      </a>
+      <a href="/pages/blogroll.html">
+        <li class="tags__li tags-btn blogroll">链接</li>
+      </a>
+      <a href="/pages/message.html">
+        <li class="tags__li tags-btn blogroll">留言</li>
+      </a>
+    </ul>
+
+    <!--Github - Rss - 邮箱-->
+    <div id="tags__bottom">
+      <a href="https://github.com/achuanya" id="icon-github" class="tags-btn fontello" target="_blank"></a>
+      <a href="/pages/rss.xml" id="icon-feed" class="tags-btn fontello" target="_blank"></a>
+      <a href="mailto:achuan@achuan.io" id="icon-email" class="tags-btn fontello"></a>
+    </div>
+  </nav>
+
+  <!--搜索-->
+  <div id="posts-list">
+    <form action="" id="search-form">
+      <a href="/" id="mobile-avatar" style="background-image:url(/assets/images/avatar.jpg)"></a>
+      <input id="search-input" type="text" placeholder="站内搜索..." >
+    </form>
+
+    <!--文章列表-->
+    <nav id="pl__container">
+    
+      <a class="生活 pl__all" href="/2019-08-25-tech-What-happened">
+        <span class="pl__circle"></span>
+        <span class="pl__title">说说消失这二十多天发生的事情</span>
+        <span class="pl__date">2019-08-25</span>
+      </a>
+    
+      <a class="开发 pl__all" href="/2019-08-07-flex-slider-and-raxus-slider">
+        <span class="pl__circle"></span>
+        <span class="pl__title">FlexSlider 和 RaxusSlider 插件相关参数</span>
+        <span class="pl__date">2019-08-07</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-05-19-tech-whiz">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)我眼中的技术高手</span>
+        <span class="pl__date">2019-05-19</span>
+      </a>
+    
+      <a class="摄影 pl__all" href="/2019-04-20-One-Single-Lens">
+        <span class="pl__circle"></span>
+        <span class="pl__title">我的第一部单反相机</span>
+        <span class="pl__date">2019-04-20</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-03-26-thoughts">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2019-03-26 随笔</span>
+        <span class="pl__date">2019-03-26</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-25-unicom">
+        <span class="pl__circle"></span>
+        <span class="pl__title">电信用户投诉攻略</span>
+        <span class="pl__date">2019-02-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2019-02-23-insist">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)微不足道的坚持</span>
+        <span class="pl__date">2019-02-23</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-12-31-2018">
+        <span class="pl__circle"></span>
+        <span class="pl__title">2018小总结</span>
+        <span class="pl__date">2018-12-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-20-cmd">
+        <span class="pl__circle"></span>
+        <span class="pl__title">cmd笔记(长期更新)</span>
+        <span class="pl__date">2018-12-20</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-12-14-php-notes">
+        <span class="pl__circle"></span>
+        <span class="pl__title">php笔记(长期更新)</span>
+        <span class="pl__date">2018-12-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-11-08-Ubuntu-Deployment">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu Server部署日记</span>
+        <span class="pl__date">2018-11-08</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-25-ubuntu-lock">
+        <span class="pl__circle"></span>
+        <span class="pl__title">解决ubuntu：E：无法获得锁(11：资源暂时不可用)</span>
+        <span class="pl__date">2018-10-25</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-24-theory-of-means">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)论胡编乱造的写作技巧</span>
+        <span class="pl__date">2018-10-24</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-10-21-domain-name">
+        <span class="pl__circle"></span>
+        <span class="pl__title">更换了域名、邮箱并修复了移动端bug</span>
+        <span class="pl__date">2018-10-21</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-10-14-git">
+        <span class="pl__circle"></span>
+        <span class="pl__title">开源分布式管理控制系统——Git笔记</span>
+        <span class="pl__date">2018-10-14</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-24-linux-command">
+        <span class="pl__circle"></span>
+        <span class="pl__title">linux命令笔记(长期更新)</span>
+        <span class="pl__date">2018-09-24</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-23-Object_oriented">
+        <span class="pl__circle"></span>
+        <span class="pl__title">面向对象(Object Oriented)学习笔记(一)</span>
+        <span class="pl__date">2018-09-23</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-09-03-Markdown">
+        <span class="pl__circle"></span>
+        <span class="pl__title">致简写作神器——Markdown</span>
+        <span class="pl__date">2018-09-03</span>
+      </a>
+    
+      <a class="生活 pl__all" href="/2018-08-31-Programmer-development">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)为什么你写不好一个快速排序? 谈程序员的职业发展</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-31-Learning-the-open-source">
+        <span class="pl__circle"></span>
+        <span class="pl__title">(转)如何学习开源项目</span>
+        <span class="pl__date">2018-08-31</span>
+      </a>
+    
+      <a class="技术 pl__all" href="/2018-08-30-Ubuntu-set-up-sublime">
+        <span class="pl__circle"></span>
+        <span class="pl__title">Ubuntu调教日记之Sublime Text3</span>
+        <span class="pl__date">2018-08-30</span>
+      </a>
+    
+    </nav>
+  </div>
+</aside>
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+  <h1 id="post__title" data-identifier="">留言</h1>
+  <hr />
+
+<div id="comment"></div>
+
+<script>
+  $(document).ready(function(){
+      var disq = new iDisqus('comment', {
+        forum: 'https-achuan-io',
+        api: 'https://api.achuan.io/api/',
+        site: 'https://achuan.io',
+        mode: 2,
+        timeout: 3000,
+        init: true,
+      });
+  });
+</script>
+
+
+</article>
+
+        <p id="copyright">
+  © 2018 - 2019 
+  <a href="http://pages.github.com?achuan.io">Github Pages</a> & 
+  <a href="http://jekyllrb.com?achuan.io">Jekyll</a> & 
+  <a href="https://disqus.com?achuan.io">Disqus</a>
+</p>
+      </div>
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">章节列表</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.staticfile.org/nprogress/0.1.2/nprogress.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.3/jquery.min.js"></script>
+<script src="/assets/js/jquery.pjax.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/iDisqus.min.js"></script>
+
+
+    <script>
+    var h0 = document.body.clientHeight;
+    var h1 = document.getElementById("avatar").offsetHeight;
+    var h2 = document.getElementById("tags__bottom").offsetHeight;
+    var h =  document.getElementById("tags__ul").scrollHeight;
+
+    var obj    = document.getElementById("tags__ul");
+    var items  = obj.getElementsByTagName("li");
+    var screen_h  = h0 - h1 - h2 - 89;
+    if (h > screen_h) {
+      obj.style.height = screen_h + "px";
+      //obj.style.paddingBottom = 15 + 'px';
+      obj.style.overflowY = "scroll";
+      obj.style.overflowX = "hidden";
+      items[0].style.borderTop = "none";
+    }
+    </script>
+
+   </body>
+ </html>
