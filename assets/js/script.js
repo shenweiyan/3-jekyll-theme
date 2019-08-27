@@ -50,12 +50,21 @@ var clickHandler = function(id) {
   }
 };
 
+var clickHandler2 = function(id) {
+  return function() {
+    $(this).addClass('active');
+    $('.pl__all').hide();
+
+    $('.' + id).delay(50).fadeIn(350);
+  }
+};
+
 $('#tags__ul li').each(function(index){
   $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
 });
 
 $('li.tags__li.tags-btn.blogroll').each(function(index){
-  $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
+  $('#' + $(this).attr('id')).on('click', clickHandler2($(this).attr('id')));
 });
 
 
