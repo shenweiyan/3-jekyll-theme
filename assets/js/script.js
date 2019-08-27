@@ -54,6 +54,11 @@ $('#tags__ul li').each(function(index){
   $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
 });
 
+$('li.tags__li.tags-btn.blogroll').each(function(index){
+  $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
+});
+
+
 // If sidebar has class 'mobile', hide it after clicking.
 $('.pl__all').on('click', function() {
   $(this).addClass('active').siblings().removeClass('active');
