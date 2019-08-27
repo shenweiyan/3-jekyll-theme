@@ -11,9 +11,7 @@
       {% for category in site.categories%}
         <li id="{{ category[0] }}" class="tags__li tags-btn">{{ category[0] }}</li>
       {% endfor %}
-      <a href="{{ site.archive }}">
-        <li id="归档" class="tags__li tags-btn blogroll">归档</li>
-      </a>
+        <li id="归档" class="tags__li tags-btn blogroll"><a href="{{ site.archive }}">归档</a></li>
       <a href="{{ site.blogroll }}">
         <li id="链接" class="tags__li tags-btn blogroll">链接</li>
       </a>
