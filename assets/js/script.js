@@ -50,19 +50,8 @@ var clickHandler = function(id) {
   }
 };
 
-var clickHandler2 = function(id) {
-  return function() {
-    $('#pl__all').siblings().removeClass('active');
-    $(this).addClass('active');
-  }
-};
-
 $('#tags__ul li').each(function(index){
   $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
-});
-
-$('li.tags__li.tags-btn.blogroll').each(function(index){
-  $('#' + $(this).attr('id')).on('click', clickHandler2($(this).attr('id')));
 });
 
 

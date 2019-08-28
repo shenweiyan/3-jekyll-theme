@@ -64,4 +64,10 @@ message: /pages/message.html
 
 # Disqus设置
 disqus: 
-id: bioinit
+id: shenweiyan
+
+# Gitalk settings
+comment_gitalk_clientId: 093185aa1c1de699753c
+comment_gitalk_clientSecret: 093185aa1c1de699753c
+comment_gitalk_repo: 3-jekyll-theme
+github_username: shenweiyan
