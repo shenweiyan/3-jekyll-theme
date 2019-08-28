@@ -20,6 +20,20 @@
       $('#pl__all').removeClass('active');
       $('#留言').addClass('active');
     });
+    // Tags switcher
+var clickHandler = function(id) {
+  return function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.pl__all').hide();
+
+    $('.' + id).delay(50).fadeIn(350);
+  }
+};
+$('#tags__ul li').each(function(index){
+  $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
+  $('#留言').removeClass('active');
+});
+
 
 </script>
 
