@@ -33,3 +33,4 @@ title: 归档
 
 
 {% include disqus.html %}
+{% include page_js.html %}

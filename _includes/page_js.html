@@ -1,0 +1,40 @@
+<script>
+    var url = window.location.pathname;
+
+    $(document).ready(function(){
+      $('#pl__all').removeClass('active');
+      if (url.indexOf('message.html') >= 1) {
+          $('#message').addClass('active');
+      } else if (url.indexOf('archive.html') >= 1) {
+          $('#archive').addClass('active');
+      } else if (url.indexOf('blogroll.html') >= 1) {
+          $('#blogroll').addClass('active');
+      } else {
+          greeting = "Good";  
+      }
+    });
+
+    // Tags switcher
+    var clickSingleHandler = function(id) {
+        return function() {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.pl__all').hide();
+            if (url.indexOf('message.html') >= 1) {
+                $('#message').removeClass('active');
+            } else if (url.indexOf('archive.html') >= 1) {
+                $('#archive').removeClass('active');
+            } else if (url.indexOf('blogroll.html') >= 1) {
+                $('#blogroll').removeClass('active');
+            } else {
+                greeting = "Good";
+            }
+            $('.' + id).delay(50).fadeIn(350);
+        }
+    };
+    $('#tags__ul li').each(function(index){
+        $('#' + $(this).attr('id')).on('click', clickHSingleandler($(this).attr('id')));
+    });
+
+
+</script>
+

@@ -19,3 +19,4 @@ title: 友情链接
 
 
 {% include disqus.html %}
+{% include page_js.html %}
