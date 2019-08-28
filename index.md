@@ -1,34 +1,50 @@
 ---
-comments: true
-layout: page
-title: 维燕的个人博客
----
----
-
-<p style="text-align:center;"><img src="{{ site.article }}index/head.png?achuan.io"/></p>
-
-我叫阿川，一个内向的蛋蛋后程序猿，一名刚踏入社会不久的21世纪储备人才，自从小时候时接触到了编程，从此对未来充满了无限遐想的我走上了一条不归之路......<br>
-
-说说我的爱好吧！我喜欢听音乐（欧美民谣、纯音乐、轻音乐、世界音乐...）、平常喜欢看一些关于思维、行为、名人自传类书籍、如指弹吉他、单反摄影、垂钓、电脑DIY、开源项目、折腾Linux......这些我都是我的爱好！最喜欢不过是坐在自己舒适的小窝喝着哈尔滨啤酒敲着红轴键盘。接触IT这些年目前掌握的技能栈有：Html、Css、JavaScript\jQuery、Php\ThinkPHP、Apache、MySQL\Redis、Linux、Git\Svn、Jekyll......<br>
-
-虽为后生，但我还是有钻研精神的，我相信我能在这条路走的很远！目标——全栈架构师！而我现在唯一要做的就是努力努力再努力！加油！阿川！！！ ![加油！阿川！]({{ site.article }}index/cheer.gif?achuan.io "加油！阿川！")<br>
-
-阿川的个人博客于 2018-8-31 日正式创建，内容系本人学习、研究和总结。初来乍到，如有写的不足之处，还请您多多指教！<br>
-
-2019-03-10 ~ 至今，就职于[郑州大象通信信息技术有限公司][1]。隶属产品开发部，任职BS软件开发工程师。大象通信成立于1999-03，是一个综合性养老服务运营企业。工作955、管理人性化，公司文化和业务也都很棒，最重要的是公司氛围好。无论高管还是普通职员，大家在一起工作经常有说有笑，我很喜欢。
-
-<br><br><br>
-
-### 联系方式：
-
-- Qzone：[阿川的个人空间]({{ site.author.Qzone }})<br>
-- Email：<achuan@achuan.io><br>
-- WeChat：<br>
-
-![阿川的微信二维码]({{ site.article }}index/Micro letter.png?achuan.io "阿川的微信")
-
+layout: post
+title: 一个热爱分享的技术网站
+keywords: Bio IT 生信 学习 技术 分享 
+description: 分享各种 bio it 技术,喜欢技术,喜欢分享,把事情简单化
+date: 2019-05-23T13:07:54+08:00
+category: 杂谈
+tags: home
 ---
 
-[1]: http://www.dxinfo.com?achuan.io
+## 关于博客
 
-{% include disqus.html %}
+本博客是基于 Jekyll 进行搭建，所有的文章均从本人的语雀知识库同步而来，如果你想要查阅最新最全的生物信息学与互联网技术相关文章，请移步：**语雀：专业云端知识库（[https://yuque.com/shenweiyan](http://tech.bioinit.com)）**。
+
+或者，您可以关注我们的微信公众号：**生信私房菜**！
+
+![公众号: bioinit](/assets/image/bioinit-qcode.png)
+
+## 关于我们
+
+- 一个从事 Bio && IT 工作的生信人。
+- 喜欢逛逛技术论坛，玩玩羽毛球，看看电影，瞎折腾一下新技术。
+- 喜欢记录一些生活中工作中学习中的一些天马行空的想法，喜欢分享，喜欢把事情简单化，程序化。
+
+## 我的资源
+
+- **语雀：** [https://www.yuque.com/shenweiyan](http://tech.bioinit.com)
+- **码云：** [https://gitee.com/shenweiyan](https://gitee.com/shenweiyan)
+- **GitHub：** [https://github.com/shenweiyan](https://github.com/shenweiyan)
+
+## 联系我们
+
+- **Q  Q：** [1910866178](1910866178) 
+- **邮箱：** [ishenweiyan@qq.com](ishenweiyan@qq.com)
+- **微信：** ishenweiyan（加我的话请说明来意以及从哪看到的微信号）
+
+------
+
+## 关于本博客更新
+
+**2019-07-05：更新目录滚动样式**
+
+- 当左侧目录数量比较多的时候，默认以滚动的方式展示。如图所示：
+  ![](/assets/image/update_20190705.png)
+
+
+**2019-06-02：更新背景与字体**
+
+- 更换保护眼睛的背景（`#C7EDCC`）。
+- 调整文章字体为 13px，小字体更专注于阅读。
