@@ -64,7 +64,7 @@ message: /pages/message.html
 
 # Disqus设置
 disqus: 
-id: shenweiyan
+  shortname: 3-jekyll-theme
 
 # Gitalk settings
 comment_gitalk_clientId: 093185aa1c1de699753c
