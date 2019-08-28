@@ -1,4 +1,4 @@
-<div id="comment">
+<div id="comments" class="comments">
 <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
@@ -6,13 +6,24 @@
       this.page.identifier = 'https://3-jekyll.bioinit.com{{ page.url }}';
     };
     (function() {
-      /*
       var d = document, s = d.createElement('script');
       s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var b = false, l = function() {
+          if (b) return;
+          (d.head || d.body).appendChild(s); b = true;
+      }
+      var t = d.getElementById('disqus_thread');
+      s.onerror = function(e) {
+          if (sessionStorage.getItem('failure-note')) return;
+          t.innerText = '非常抱歉, 中国大陆地区读者需要翻墙才能发表评论。';
+          t.style.border = '1px dashed';
+          t.style.padding = '.5em';
+          t.style.background = 'lightyellow';
+          sessionStorage.setItem('failure-note', true);
+      };
       })();
-      */
+      /*
       var inIFrame = function() {
           var iframe = true;
           try { iframe = window.self !== window.top; } catch (e) {}
@@ -45,7 +56,7 @@
       };
       window.addEventListener('load', c);
       d.addEventListener('scroll', c);
-    })();
+    })();*/
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
