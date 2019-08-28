@@ -52,7 +52,7 @@ var clickHandler = function(id) {
 
 var clickHandler2 = function(id) {
   return function() {
-    $('.pl__all').removeClass('active');
+    $('#pl__all').removeClass('active');
     $(this).addClass('active');
   }
 };
