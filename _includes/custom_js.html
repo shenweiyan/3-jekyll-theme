@@ -1,0 +1,25 @@
+<script>
+    /*
+    var h0 = document.body.clientHeight;
+    var h1 = document.getElementById("avatar").offsetHeight;
+    var h2 = document.getElementById("tags__bottom").offsetHeight;
+    var h =  document.getElementById("tags__ul").scrollHeight;
+
+    var obj    = document.getElementById("tags__ul");
+    var items  = obj.getElementsByTagName("li");
+    var screen_h  = h0 - h1 - h2 - 89;
+    if (h > screen_h) {
+      obj.style.height = screen_h + "px";
+      //obj.style.paddingBottom = 15 + 'px';
+      obj.style.overflowY = "scroll";
+      obj.style.overflowX = "hidden";
+      items[0].style.borderTop = "none";
+    }
+    */
+    $(document).ready(function(){
+      $('#pl__all').siblings().removeClass('active');
+      $('#留言').addClass('active');
+    });
+
+</script>
+
