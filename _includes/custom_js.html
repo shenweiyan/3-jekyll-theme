@@ -25,7 +25,7 @@ var clickHandler = function(id) {
   return function() {
     $(this).addClass('active').siblings().removeClass('active');
     $('.pl__all').hide();
-
+    $('#留言').removeClass('active');
     $('.' + id).delay(50).fadeIn(350);
   }
 };
