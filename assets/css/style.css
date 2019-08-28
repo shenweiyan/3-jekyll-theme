@@ -870,28 +870,28 @@ iframe {
 /*---------------------------------*\
     icon
 \*---------------------------------*/
-#icon-home {
+.tags-fa-home, #icon-home {
   border-right: 1px solid #626262;
 }
 #icon-home:before {
   content: "\e802";
 }
-#icon-home:hover {
+.tags-fa-home:hover, #icon-home:hover {
   color: #FFFFFF;
 }
-#icon-github {
+.tags-fa-github, #icon-github {
   border-right: 1px solid #626262;
 }
 #icon-github:before {
   content: "\e805";
 }
-#icon-github:hover {
+.tags-fa-github:hover, #icon-github:hover {
   color: #FFFFFF;
 }
 #icon-feed {
   border-right: 1px solid #626262;
 }
-#icon-feed:hover {
+.tags-fa-rss:hover, #icon-feed:hover {
   color: #FFFFFF;
 }
 #icon-feed:before {
