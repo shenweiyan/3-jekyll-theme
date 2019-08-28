@@ -17,7 +17,7 @@
       return iframe;
     };
     if (inIFrame()) return;
-    var disqus_js = '//{{ .Site.DisqusShortname }}.disqus.com/embed.js';
+    var disqus_js = '//{{ site.disqus.shortname }}.disqus.com/embed.js';
     var d = document, s = d.createElement('script');
     s.src = disqus_js; s.async = true;
     s.setAttribute('data-timestamp', +new Date());
