@@ -867,7 +867,18 @@ iframe {
   box-shadow: 0 0 0 2px rgba(125, 139, 153, 0.15);
 }
 
-
+/*---------------------------------*\
+    icon
+\*---------------------------------*/
+#icon-home {
+  border-right: 1px solid #626262;
+}
+#icon-home:before {
+  content: "\e802";
+}
+#icon-home:hover {
+  color: #FFFFFF;
+}
 #icon-github {
   border-right: 1px solid #626262;
 }
@@ -877,14 +888,11 @@ iframe {
 #icon-github:hover {
   color: #FFFFFF;
 }
-/*---------------------------------*\
-   icon
-\*---------------------------------*/
 #icon-feed {
   border-right: 1px solid #626262;
 }
 #icon-feed:hover {
-  color: #00FF00;
+  color: #FFFFFF;
 }
 #icon-feed:before {
   content: "\e802";
@@ -901,8 +909,6 @@ iframe {
 #icon-email:hover {
   color: #FF0000;
 }
-
-
 #icon-twitter {
   margin-left: -90px;
 }
@@ -912,7 +918,6 @@ iframe {
 #icon-twitter:hover {
   color: #4099ff;
 }
-
 #icon-qzone {
   margin-left: 50px;
 }
