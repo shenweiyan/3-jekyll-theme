@@ -10,7 +10,6 @@
 }
 
 .fontello, .post__toc-li:before {
-  font-family: "fontello";
   speak: none;
   font-variant: normal;
   text-transform: none;
@@ -21,22 +20,22 @@
    Base
 \*---------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Source Code Pro',Microsoft YaHei,Verdana;
-  font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font: 100 16px/1.5 Tahoma, Monaco;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-text-size-adjust: none;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Tahoma For Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: none;
+    overflow: hidden;
+    font-size: 12px;
 }
+
 
 a {
   text-decoration: none;
