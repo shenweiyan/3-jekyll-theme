@@ -9,12 +9,14 @@
   font-style: normal;
 }
 
+/*shenweiyan: 箭头图标*/
 .fontello, .post__toc-li:before {
-  speak: none;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "fontello";
+    speak: none;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 /*---------------------------------*\
    Base
